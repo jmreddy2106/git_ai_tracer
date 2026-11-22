@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git AI Tracer Dashboard — jmreddy2106</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: rgba(22, 27, 34, 0.85);
+      --card-border: rgba(48, 54, 61, 0.7);
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-green: #3fb950;
+      --accent-purple: #bc8cff;
+      --accent-amber: #d29922;
+      --badge-bg: #161b22;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(circle at 15% 20%, rgba(88, 166, 255, 0.08) 0%, transparent 40%),
+                        radial-gradient(circle at 85% 80%, rgba(188, 140, 255, 0.06) 0%, transparent 40%);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-icon {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #58a6ff, #bc8cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      backdrop-filter: blur(8px);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0.5rem 0 0.2rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .stat-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .search-box input:focus {
+      border-color: var(--accent);
+    }
+    .search-icon {
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: rgba(88, 166, 255, 0.15);
+      border-color: var(--accent);
+      color: var(--text-main);
+    }
+    .table-container {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th {
+      background: rgba(13, 17, 23, 0.6);
+      padding: 1rem 1.25rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--card-border);
+    }
+    td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--card-border);
+      font-size: 0.92rem;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .repo-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .repo-link:hover {
+      text-decoration: underline;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin: 0.15rem;
+    }
+    .tag-claude { background: rgba(217, 119, 6, 0.2); color: #fbbf24; border: 1px solid rgba(217, 119, 6, 0.4); }
+    .tag-cursor { background: rgba(88, 166, 255, 0.2); color: #79c0ff; border: 1px solid rgba(88, 166, 255, 0.4); }
+    .tag-copilot { background: rgba(63, 185, 80, 0.2); color: #56d364; border: 1px solid rgba(63, 185, 80, 0.4); }
+    .tag-aider { background: rgba(188, 140, 255, 0.2); color: #d2a8ff; border: 1px solid rgba(188, 140, 255, 0.4); }
+    .tag-agent { background: rgba(247, 120, 186, 0.2); color: #ff7b72; border: 1px solid rgba(247, 120, 186, 0.4); }
+    .tag-general { background: rgba(110, 118, 129, 0.2); color: #c9d1d9; border: 1px solid rgba(110, 118, 129, 0.4); }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo-icon">🛰️</div>
+        <div>
+          <h1>Git AI Tracer</h1>
+          <div class="subtitle">Live tracking of AI Coding Tools & AI Agent Architectures across GitHub</div>
+        </div>
+      </div>
+      <div>
+        <a href="https://github.com/jmreddy2106" target="_blank" class="repo-link">
+          Target: @jmreddy2106
+        </a>
+      </div>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Total Repos Scanned</div>
+        <div class="stat-value" id="stat-total">5</div>
+        <div class="stat-desc">Target public repositories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AI Tool Assisted</div>
+        <div class="stat-value" style="color: var(--accent)" id="stat-assisted">1</div>
+        <div class="stat-desc">Claude Code, Cursor, Copilot, etc.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AI Agent Repos</div>
+        <div class="stat-value" style="color: var(--accent-purple)" id="stat-agents">1</div>
+        <div class="stat-desc">LangGraph, CrewAI, AutoGen, MCP</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AI Adoption Rate</div>
+        <div class="stat-value" style="color: var(--accent-green)" id="stat-rate">20.0%</div>
+        <div class="stat-desc">Share of AI-powered projects</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search repository name, language, or AI tool...">
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Repos</button>
+        <button class="filter-btn" data-filter="ai-only">AI Assisted</button>
+        <button class="filter-btn" data-filter="agents-only">AI Agents</button>
+        <button class="filter-btn" data-filter="claude">Claude Code</button>
+        <button class="filter-btn" data-filter="cursor">Cursor</button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Repository</th>
+            <th>AI Tools</th>
+            <th>Agent Frameworks</th>
+            <th>Stars</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody id="repos-table-body">
+          <!-- Dynamically populated -->
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      Powered by <strong>Git AI Tracer</strong> • Automatically refreshed via GitHub Actions
+    </footer>
+  </div>
+
+  <script>
+    const DATA = {"target_type":"user","target_identifier":"jmreddy2106","scan_timestamp":"2026-11-22T14:55:14.845789+00:00","total_repos_scanned":5,"ai_assisted_repos_count":1,"agent_repos_count":1,"ai_adoption_rate":20.0,"tool_counts":{"Claude Code":1},"framework_counts":{},"agent_category_counts":{"General Agent Framework":1,"Multi-Agent System":1},"repositories":[{"name":"OpenCluely","full_name":"jmreddy2106/OpenCluely","html_url":"https://github.com/jmreddy2106/OpenCluely","description":"OpenCluely is a free, open source Cluely (alternative), built for technical interviews like DSA, OAs, and CP. It offers an invisible overlay, real-time AI help, Smart Image Processing for question capture, and multi-language support : 100% customizable and private.","default_branch":"main","stars":0,"forks":0,"primary_language":null,"topics":[],"created_at":"2026-10-31T10:02:45Z","pushed_at":"2026-07-29T17:11:11Z","is_ai_powered":true,"detected_tools":[{"tool_name":"Claude Code","category":"coding_assistant","confidence":0.98,"evidence":[{"type":"config","match":"CLAUDE.md","confidence":0.98,"details":"Matched configuration marker: CLAUDE.md"}]}],"agent_detection":{"is_agent_project":false,"confidence":0.0,"categories":[],"frameworks":[],"evidence":[]},"scan_timestamp":"2026-11-22T14:55:09.447897+00:00"},{"name":"Workspace-Intelligence-Agent","full_name":"jmreddy2106/Workspace-Intelligence-Agent","html_url":"https://github.com/jmreddy2106/Workspace-Intelligence-Agent","description":"Workspace Intelligence Agent (WIA) is an AI-powered multi-agent platform that centralizes workplace knowledge, automates workflows, and provides context-aware assistance. Using LLMs and RAG, it enables intelligent document search, task automation, and faster decision-making to improve team productivity.","default_branch":"main","stars":0,"forks":0,"primary_language":null,"topics":[],"created_at":"2026-09-28T14:50:25Z","pushed_at":"2026-09-28T06:09:32Z","is_ai_powered":true,"detected_tools":[],"agent_detection":{"is_agent_project":true,"confidence":0.88,"categories":["General Agent Framework","Multi-Agent System"],"frameworks":[],"evidence":[{"type":"description","match":"Repo Name: workspace-intelligence-agent","confidence":0.85,"details":"Repository name contains agent designation: 'workspace-intelligence-agent'"},{"type":"description","match":"Desc: multi-agent","confidence":0.88,"details":"Description explicitly mentions 'multi-agent'"},{"type":"description","match":"Desc: agent platform","confidence":0.88,"details":"Description explicitly mentions 'agent platform'"}]},"scan_timestamp":"2026-11-22T14:55:11.649019+00:00"},{"name":"gendeptrace_benchmark","full_name":"jmreddy2106/gendeptrace_benchmark","html_url":"https://github.com/jmreddy2106/gendeptrace_benchmark","description":"Evidence-aware dependency governance for generative-AI-generated software.","default_branch":"main","stars":0,"forks":0,"primary_language":"Python","topics":[],"created_at":"2026-09-16T17:55:40Z","pushed_at":"2026-09-17T15:25:24Z","is_ai_powered":false,"detected_tools":[],"agent_detection":{"is_agent_project":false,"confidence":0.0,"categories":[],"frameworks":[],"evidence":[]},"scan_timestamp":"2026-11-22T14:55:12.699911+00:00"},{"name":"jmreddy2106","full_name":"jmreddy2106/jmreddy2106","html_url":"https://github.com/jmreddy2106/jmreddy2106","description":"Config files for my GitHub profile.","default_branch":"main","stars":0,"forks":0,"primary_language":null,"topics":["config","github-config"],"created_at":"2021-09-02T21:07:40Z","pushed_at":"2026-08-29T18:00:40Z","is_ai_powered":false,"detected_tools":[],"agent_detection":{"is_agent_project":false,"confidence":0.0,"categories":[],"frameworks":[],"evidence":[]},"scan_timestamp":"2026-11-22T14:55:13.472541+00:00"},{"name":"crypto-algorithms-demo","full_name":"jmreddy2106/crypto-algorithms-demo","html_url":"https://github.com/jmreddy2106/crypto-algorithms-demo","description":"A one-page classroom application demonstrating **DES, AES, RSA, Diffie-Hellman and RC4** with a React frontend and Flask/Python backend using PyCryptodome.","default_branch":"main","stars":1,"forks":0,"primary_language":"Python","topics":[],"created_at":"2026-08-27T17:02:36Z","pushed_at":"2026-08-27T17:04:45Z","is_ai_powered":false,"detected_tools":[],"agent_detection":{"is_agent_project":false,"confidence":0.0,"categories":[],"frameworks":[],"evidence":[]},"scan_timestamp":"2026-11-22T14:55:14.843519+00:00"}]};
+    const tbody = document.getElementById('repos-table-body');
+    const searchInput = document.getElementById('search-input');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    let currentFilter = 'all';
+
+    function getToolTagClass(name) {
+      const lower = name.toLowerCase();
+      if (lower.includes('claude')) return 'tag-claude';
+      if (lower.includes('cursor')) return 'tag-cursor';
+      if (lower.includes('copilot')) return 'tag-copilot';
+      if (lower.includes('aider')) return 'tag-aider';
+      return 'tag-general';
+    }
+
+    function renderRows() {
+      const query = searchInput.value.toLowerCase().trim();
+      tbody.innerHTML = '';
+
+      const filtered = DATA.repositories.filter(repo => {
+        // Filter tabs
+        if (currentFilter === 'ai-only' && (!repo.detected_tools || repo.detected_tools.length === 0)) return false;
+        if (currentFilter === 'agents-only' && (!repo.agent_detection || !repo.agent_detection.is_agent_project)) return false;
+        if (currentFilter === 'claude' && !repo.detected_tools.some(t => t.tool_name.toLowerCase().includes('claude'))) return false;
+        if (currentFilter === 'cursor' && !repo.detected_tools.some(t => t.tool_name.toLowerCase().includes('cursor'))) return false;
+
+        // Search text
+        if (query) {
+          const nameMatch = repo.name.toLowerCase().includes(query);
+          const langMatch = (repo.primary_language || '').toLowerCase().includes(query);
+          const toolMatch = repo.detected_tools.some(t => t.tool_name.toLowerCase().includes(query));
+          const agentMatch = (repo.agent_detection.frameworks || []).some(f => f.toLowerCase().includes(query));
+          if (!nameMatch && !langMatch && !toolMatch && !agentMatch) return false;
+        }
+
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding: 2rem; color: var(--text-muted);">No matching repositories found.</td></tr>`;
+        return;
+      }
+
+      filtered.forEach(repo => {
+        const tr = document.createElement('tr');
+
+        // Tool tags
+        const toolTags = repo.detected_tools.length > 0
+          ? repo.detected_tools.map(t => `<span class="tag ${getToolTagClass(t.tool_name)}">${t.tool_name}</span>`).join('')
+          : '<span style="color: var(--text-muted);">—</span>';
+
+        // Agent tags
+        let agentTags = '<span style="color: var(--text-muted);">—</span>';
+        if (repo.agent_detection && repo.agent_detection.is_agent_project) {
+          const frameworks = repo.agent_detection.frameworks || [];
+          const categories = repo.agent_detection.categories || [];
+          if (frameworks.length > 0) {
+            agentTags = frameworks.map(f => `<span class="tag tag-agent">🤖 ${f}</span>`).join('');
+          } else if (categories.length > 0) {
+            agentTags = categories.map(c => `<span class="tag tag-agent">🤖 ${c}</span>`).join('');
+          } else {
+            agentTags = '<span class="tag tag-agent">🤖 Agent</span>';
+          }
+        }
+
+        tr.innerHTML = `
+          <td>
+            <a href="${repo.html_url}" target="_blank" class="repo-link">${repo.name}</a>
+            ${repo.description ? `<div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">${repo.description.substring(0, 80)}...</div>` : ''}
+          </td>
+          <td>${toolTags}</td>
+          <td>${agentTags}</td>
+          <td>⭐ ${repo.stars}</td>
+          <td>${repo.primary_language || '—'}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    searchInput.addEventListener('input', renderRows);
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.getAttribute('data-filter');
+        renderRows();
+      });
+    });
+
+    // Initial render
+    renderRows();
+  </script>
+</body>
+</html>
