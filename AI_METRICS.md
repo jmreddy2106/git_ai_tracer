@@ -1,6 +1,6 @@
-# 🤖 Git AI Tracer Report: `topic:ai-agent`
+# 🤖 Git AI Tracer Report: `jmreddy2106`
 
-*Last updated: 2026-11-22T15:21:14.778174+00:00 UTC*
+*Last updated: 2026-11-23T10:04:24.622927+00:00 UTC*
 
 ## 📊 Overview Badges
 
@@ -13,82 +13,74 @@
 
 | Metric | Value | Description |
 | :--- | :--- | :--- |
-| **Total Repositories Scanned** | **50** | Public repositories evaluated |
-| **AI-Tool Assisted Repos** | **5** | Repositories showing Claude Code, Cursor, Copilot, etc. |
-| **AI Agent Projects** | **50** | Repositories built with agent frameworks / MCP |
-| **Overall AI Adoption Rate** | **10.0%** | Percentage of active repos with AI footprints |
+| **Total Repositories Scanned** | **45** | Public repositories evaluated |
+| **AI-Tool Assisted Repos** | **2** | Repositories showing Claude Code, Cursor, Copilot, etc. |
+| **AI Agent Projects** | **2** | Repositories built with agent frameworks / MCP |
+| **Overall AI Adoption Rate** | **4.4%** | Percentage of active repos with AI footprints |
 
 ### 🛠️ AI Coding Tool Distribution
 
 | AI Tool | Detected Projects | Distribution |
 | :--- | :--- | :--- |
-| **v0 / Bolt / Lovable** | 3 | `██████░░░░░░░░░` 42.9% |
-| **Claude Code** | 3 | `██████░░░░░░░░░` 42.9% |
-| **GitHub Copilot** | 1 | `██░░░░░░░░░░░░░` 14.3% |
+| **Claude Code** | 1 | `████████░░░░░░░` 50.0% |
+| **v0 / Bolt / Lovable** | 1 | `████████░░░░░░░` 50.0% |
 
 ### 🧠 AI Agent Frameworks & Architectures
 
 | Framework / Classification | Repositories | Type |
 | :--- | :--- | :--- |
-| **Model Context Protocol (MCP)** | 4 | Framework / Library |
-| **General Agent Framework** | 50 | Architecture Category |
-| **Multi-Agent System** | 5 | Architecture Category |
-| **Model Context Protocol (MCP)** | 4 | Architecture Category |
+| **General Agent Framework** | 2 | Architecture Category |
+| **Multi-Agent System** | 1 | Architecture Category |
 
 ### 📁 Detailed Repository Breakdown
 
 | Repository | AI Tools | Agent Frameworks | Stars | Language |
 | :--- | :--- | :--- | :---: | :--- |
-| [hermes-agent](https://github.com/NousResearch/hermes-agent) | `v0 / Bolt / Lovable` | `Model Context Protocol (MCP)` | 265337 | Python |
-| [Agent-Reach](https://github.com/Panniantong/Agent-Reach) | `Claude Code` | Agentic | 113924 | Python |
-| [career-ops](https://github.com/career-ops-hq/career-ops) | `Claude Code`, `GitHub Copilot`, `v0 / Bolt / Lovable` | Agentic | 84142 | JavaScript |
-| [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | `v0 / Bolt / Lovable` | Agentic | 80726 | Python |
-| [ppt-master](https://github.com/hugohe3/ppt-master) | `Claude Code` | Agentic | 79238 | Python |
-| [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) | — | Agentic | 74796 | MDX |
-| [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | — | Agentic | 73696 | Python |
-| [ai-agent-book](https://github.com/bojieli/ai-agent-book) | — | Agentic | 59073 | Python |
-| [nanobot](https://github.com/HKUDS/nanobot) | — | `Model Context Protocol (MCP)` | 50268 | Python |
-| [CowAgent](https://github.com/zhayujie/CowAgent) | — | Agentic | 48043 | Python |
-| [siyuan](https://github.com/siyuan-note/siyuan) | — | Agentic | 47340 | TypeScript |
-| [Codewhale](https://github.com/codewhale-hq/Codewhale) | — | Agentic | 41198 | Rust |
-| [oh-my-pi](https://github.com/can1357/oh-my-pi) | — | Agentic | 39641 | TypeScript |
-| [CopilotKit](https://github.com/CopilotKit/CopilotKit) | — | Agentic | 38879 | TypeScript |
-| [Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | — | Agentic | 38683 | Python |
-| [QwenPaw](https://github.com/agentscope-ai/QwenPaw) | — | Agentic | 38102 | Python |
-| [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | — | Agentic | 36083 | Go |
-| [openclaude](https://github.com/Twigpine/openclaude) | — | Agentic | 34482 | TypeScript |
-| [AionUi](https://github.com/iOfficeAI/AionUi) | — | Agentic | 34431 | TypeScript |
-| [cua](https://github.com/trycua/cua) | — | Agentic | 32772 | Rust |
-| [Jobs_Applier_AI_Agent](https://github.com/feder-cr/Jobs_Applier_AI_Agent) | — | Agentic | 32609 | Python |
-| [cli](https://github.com/googleworkspace/cli) | — | Agentic | 32442 | Rust |
-| [OpenCLI](https://github.com/jackwener/OpenCLI) | — | Agentic | 31223 | JavaScript |
-| [TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | — | Agentic | 31098 | TypeScript |
-| [qwen-code](https://github.com/QwenLM/qwen-code) | — | Agentic | 30861 | TypeScript |
-| [guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill) | — | Agentic | 30256 | HTML |
-| [dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | — | Agentic | 30054 | Dart |
-| [distilly](https://github.com/titanwings/distilly) | — | Agentic | 26773 | Python |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | — | Agentic | 25845 | TypeScript |
-| [activepieces](https://github.com/activepieces/activepieces) | — | `Model Context Protocol (MCP)` | 25679 | TypeScript |
-| [nocobase](https://github.com/nocobase/nocobase) | — | Agentic | 24980 | TypeScript |
-| [ego-lite](https://github.com/citrolabs/ego-lite) | — | Agentic | 24016 | JavaScript |
-| [ai-guide](https://github.com/liyupi/ai-guide) | — | Agentic | 22302 | JavaScript |
-| [teable](https://github.com/teableio/teable) | — | Agentic | 22008 | TypeScript |
-| [jcode](https://github.com/1jehuang/jcode) | — | Agentic | 21989 | Rust |
-| [browser-harness](https://github.com/browser-use/browser-harness) | — | Agentic | 19192 | Python |
-| [parlant](https://github.com/emcie-co/parlant) | — | Agentic | 18339 | Python |
-| [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | — | Agentic | 17793 | Go |
-| [leon](https://github.com/leon-ai/leon) | — | Agentic | 17704 | TypeScript |
-| [ai-berkshire](https://github.com/xbtlin/ai-berkshire) | — | Agentic | 17212 | HTML |
-| [web-ui](https://github.com/browser-use/web-ui) | — | Agentic | 16665 | Python |
-| [docker-android](https://github.com/budtmo/docker-android) | — | `Model Context Protocol (MCP)` | 16187 | Python |
-| [cc-haha](https://github.com/NanmiCoder/cc-haha) | — | Agentic | 15520 | TypeScript |
-| [waoowaoo](https://github.com/waooAI/waoowaoo) | — | Agentic | 14967 | TypeScript |
-| [E2B](https://github.com/e2b-dev/E2B) | — | Agentic | 14963 | Python |
-| [hermes-desktop](https://github.com/fathah/hermes-desktop) | — | Agentic | 14614 | TypeScript |
-| [GenericAgent](https://github.com/lsdefine/GenericAgent) | — | Agentic | 14441 | Python |
-| [ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) | — | Agentic | 13321 | — |
-| [autoclip](https://github.com/zhouxiaoka/autoclip) | — | Agentic | 13251 | Python |
-| [genoffice](https://github.com/genspark-ai/genoffice) | — | Agentic | 12767 | TypeScript |
+| [git_ai_tracer](https://github.com/jmreddy2106/git_ai_tracer) | — | Agentic | 0 | Python |
+| [OpenCluely](https://github.com/jmreddy2106/OpenCluely) | `Claude Code` | — | 0 | — |
+| [Workspace-Intelligence-Agent](https://github.com/jmreddy2106/Workspace-Intelligence-Agent) | — | Agentic | 0 | — |
+| [gendeptrace_benchmark](https://github.com/jmreddy2106/gendeptrace_benchmark) | — | — | 0 | Python |
+| [jmreddy2106](https://github.com/jmreddy2106/jmreddy2106) | — | — | 0 | — |
+| [crypto-algorithms-demo](https://github.com/jmreddy2106/crypto-algorithms-demo) | — | — | 1 | Python |
+| [GitSecure](https://github.com/jmreddy2106/GitSecure) | `v0 / Bolt / Lovable` | — | 1 | — |
+| [aws-cli-localstack-dcoker](https://github.com/jmreddy2106/aws-cli-localstack-dcoker) | — | — | 1 | — |
+| [DermScan-AI](https://github.com/jmreddy2106/DermScan-AI) | — | — | 0 | — |
+| [hackfest-2026](https://github.com/jmreddy2106/hackfest-2026) | — | — | 0 | Python |
+| [docuvoice](https://github.com/jmreddy2106/docuvoice) | — | — | 0 | TypeScript |
+| [proj1](https://github.com/jmreddy2106/proj1) | — | — | 0 | Python |
+| [design-and-analysis-of-algorithms-notes](https://github.com/jmreddy2106/design-and-analysis-of-algorithms-notes) | — | — | 0 | HTML |
+| [structure-aware-document-retrieval](https://github.com/jmreddy2106/structure-aware-document-retrieval) | — | — | 0 | — |
+| [Introduction-to-Data-Science-textbook](https://github.com/jmreddy2106/Introduction-to-Data-Science-textbook) | — | — | 1 | — |
+| [spark-structured-streaming-pipeline](https://github.com/jmreddy2106/spark-structured-streaming-pipeline) | — | — | 0 | Python |
+| [automated-debugger-demo](https://github.com/jmreddy2106/automated-debugger-demo) | — | — | 1 | Python |
+| [dbms-fall-2025](https://github.com/jmreddy2106/dbms-fall-2025) | — | — | 0 | HTML |
+| [Assignment-1-CSVReaderPreview](https://github.com/jmreddy2106/Assignment-1-CSVReaderPreview) | — | — | 0 | Java |
+| [ml-flask-app](https://github.com/jmreddy2106/ml-flask-app) | — | — | 0 | Python |
+| [ge-smm-aq](https://github.com/jmreddy2106/ge-smm-aq) | — | — | 2 | Python |
+| [edify](https://github.com/jmreddy2106/edify) | — | — | 0 | Python |
+| [Secure-SSCS-SBOM](https://github.com/jmreddy2106/Secure-SSCS-SBOM) | — | — | 1 | Python |
+| [AirFlow-AWS-Cli-localstack-docker](https://github.com/jmreddy2106/AirFlow-AWS-Cli-localstack-docker) | — | — | 1 | Python |
+| [GraphBOM](https://github.com/jmreddy2106/GraphBOM) | — | — | 0 | — |
+| [Kafka-PySpark-Streaming-Analytics-YouTube](https://github.com/jmreddy2106/Kafka-PySpark-Streaming-Analytics-YouTube) | — | — | 2 | Python |
+| [AWS](https://github.com/jmreddy2106/AWS) | — | — | 0 | — |
+| [Terraform-aws-localstack](https://github.com/jmreddy2106/Terraform-aws-localstack) | — | — | 1 | HCL |
+| [React-Flask-Python-WebApp](https://github.com/jmreddy2106/React-Flask-Python-WebApp) | — | — | 1 | JavaScript |
+| [Attention_Deficit_Hyperactivity_Disorder-ADHD](https://github.com/jmreddy2106/Attention_Deficit_Hyperactivity_Disorder-ADHD) | — | — | 1 | Jupyter Notebook |
+| [ASL-Signs-Predictions](https://github.com/jmreddy2106/ASL-Signs-Predictions) | — | — | 0 | Jupyter Notebook |
+| [Youtube](https://github.com/jmreddy2106/Youtube) | — | — | 0 | — |
+| [Text-Summarization-with-Flask](https://github.com/jmreddy2106/Text-Summarization-with-Flask) | — | — | 1 | — |
+| [Welfare-Schemes-DMQL](https://github.com/jmreddy2106/Welfare-Schemes-DMQL) | — | — | 1 | EJS |
+| [WebDesignusingBootstrap](https://github.com/jmreddy2106/WebDesignusingBootstrap) | — | — | 0 | JavaScript |
+| [webdev-using-react-](https://github.com/jmreddy2106/webdev-using-react-) | — | — | 0 | JavaScript |
+| [Telugu-Handwritten-Digit-Recognition](https://github.com/jmreddy2106/Telugu-Handwritten-Digit-Recognition) | — | — | 1 | — |
+| [Software-Bug-Prediction](https://github.com/jmreddy2106/Software-Bug-Prediction) | — | — | 1 | Python |
+| [Pattern-Mining-Intensive-Care-Unit](https://github.com/jmreddy2106/Pattern-Mining-Intensive-Care-Unit) | — | — | 2 | — |
+| [KafkaPySpark](https://github.com/jmreddy2106/KafkaPySpark) | — | — | 1 | — |
+| [Horticulture_Tableau_SmartInternz](https://github.com/jmreddy2106/Horticulture_Tableau_SmartInternz) | — | — | 0 | — |
+| [idpt_source](https://github.com/jmreddy2106/idpt_source) | — | — | 1 | — |
+| [DMQL-Homework-Latex-Tempalte-University-at-Buffalo](https://github.com/jmreddy2106/DMQL-Homework-Latex-Tempalte-University-at-Buffalo) | — | — | 1 | TeX |
+| [BigDataSpark](https://github.com/jmreddy2106/BigDataSpark) | — | — | 0 | Scala |
+| [amzon-reviews](https://github.com/jmreddy2106/amzon-reviews) | — | — | 0 | Python |
 
 ---
 
@@ -98,7 +90,7 @@ Add the following markdown snippet to your personal profile `README.md` to displ
 
 ```markdown
 ### 🤖 My AI & LLM Usage Footprint
-![AI Adoption](https://raw.githubusercontent.com/topic:ai-agent/git_ai_tracer/main/badges/adoption_rate.svg)
-![AI Agents](https://raw.githubusercontent.com/topic:ai-agent/git_ai_tracer/main/badges/agent_status.svg)
-![Top AI Tool](https://raw.githubusercontent.com/topic:ai-agent/git_ai_tracer/main/badges/ai_tools.svg)
+![AI Adoption](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/adoption_rate.svg)
+![AI Agents](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/agent_status.svg)
+![Top AI Tool](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/ai_tools.svg)
 ```
