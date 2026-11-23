@@ -1,32 +1,1321 @@
 {
-  "target_type": "user",
-  "target_identifier": "jmreddy2106",
-  "scan_timestamp": "2026-11-22T14:55:14.845789+00:00",
-  "total_repos_scanned": 5,
-  "ai_assisted_repos_count": 1,
-  "agent_repos_count": 1,
-  "ai_adoption_rate": 20.0,
+  "target_type": "ecosystem",
+  "target_identifier": "topic:ai-agent",
+  "scan_timestamp": "2026-11-22T15:21:14.778174+00:00",
+  "total_repos_scanned": 50,
+  "ai_assisted_repos_count": 5,
+  "agent_repos_count": 50,
+  "ai_adoption_rate": 10.0,
   "tool_counts": {
-    "Claude Code": 1
+    "v0 / Bolt / Lovable": 3,
+    "Claude Code": 3,
+    "GitHub Copilot": 1
   },
-  "framework_counts": {},
+  "framework_counts": {
+    "Model Context Protocol (MCP)": 4
+  },
   "agent_category_counts": {
-    "General Agent Framework": 1,
-    "Multi-Agent System": 1
+    "General Agent Framework": 50,
+    "Model Context Protocol (MCP)": 4,
+    "Multi-Agent System": 5
   },
   "repositories": [
     {
-      "name": "OpenCluely",
-      "full_name": "jmreddy2106/OpenCluely",
-      "html_url": "https://github.com/jmreddy2106/OpenCluely",
-      "description": "OpenCluely is a free, open source Cluely (alternative), built for technical interviews like DSA, OAs, and CP. It offers an invisible overlay, real-time AI help, Smart Image Processing for question capture, and multi-language support : 100% customizable and private.",
+      "name": "hermes-agent",
+      "full_name": "NousResearch/hermes-agent",
+      "html_url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
       "default_branch": "main",
-      "stars": 0,
-      "forks": 0,
-      "primary_language": null,
-      "topics": [],
-      "created_at": "2026-10-31T10:02:45Z",
-      "pushed_at": "2026-07-29T17:11:11Z",
+      "stars": 265337,
+      "forks": 59985,
+      "primary_language": "Python",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "hermes",
+        "hermes-agent",
+        "llm",
+        "nous-research",
+        "openai"
+      ],
+      "created_at": "2025-07-22T22:22:28Z",
+      "pushed_at": "2026-11-22T15:04:35Z",
+      "is_ai_powered": true,
+      "detected_tools": [
+        {
+          "tool_name": "v0 / Bolt / Lovable",
+          "category": "app_generator",
+          "confidence": 0.9,
+          "evidence": [
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/__tests__",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/__tests__/no-native-title.test.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/accent-swatch.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/action-status.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/actions-menu.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/actions-menu.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/alert.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/avatar-chip.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/avatar-chip.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/badge.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/button.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/card-stack.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/card-stack.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/checkbox.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/chip.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/codicon.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/color-swatches.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/command.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/confirm-dialog-unmount.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/confirm-dialog.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/confirm-dialog.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/connector-card.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/connector-card.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/connector-logo.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/context-menu.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/control.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/copy-button.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/decode-text.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/decode-text.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/dialog-dismiss-repro.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/dialog-portal-context.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/dialog.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/dialog.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/diff-count.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/disclosure-caret.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/drop-affordance.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/dropdown-menu.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/dropdown-menu.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/empty-state.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/error-state.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/fade-scroll.test.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/fade-scroll.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/fade-text.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/fan-menu-tooltip.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/fan-menu.test.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/fan-menu.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/favicon.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/field.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/file-type-icon.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/generate-button.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/glyph-spinner.css",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/glyph-spinner.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/glyph-spinner.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/guest-shell.test.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/highlight-matches-model.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/highlight-matches.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/highlight-matches.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/input.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/input.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/kbd.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/keyboard-first.test.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/keyboard-first.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/loader.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/log-view.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/masonry.css",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/masonry.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/menu.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/pagination.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/pane-tab-keyboard.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/pane-tab-keyboard.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/pane-tab.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/pane-tab.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/popover.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/preview-document-frame.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/preview-document-frame.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/profile-glyph.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/profile-glyph.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/progress.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/reel.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/row-button.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/row-button.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/sandboxed-frame.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/sandboxed-frame.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/sanitized-input.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/scroll-area.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/search-field.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/search-field.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/segmented-control.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/select.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/separator.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/setup-field-list.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/setup-form-dialog.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/sheet.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/sidebar.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/skeleton.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/slider.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/split-button.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/status-pulse.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/status-pulse.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/switch.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tab-dropdown.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tabs.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/text-tab.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/textarea.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/title-menu-trigger.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tool-icon.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip-pane-layout.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip-placement.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip-placement.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip-rail-edge.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip.css",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/tooltip.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/use-zoom-pan.ts",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/zoomable-fit.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/zoomable.test.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "apps/desktop/src/components/ui/zoomable.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            }
+          ]
+        }
+      ],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.95,
+        "categories": [
+          "General Agent Framework",
+          "Model Context Protocol (MCP)"
+        ],
+        "frameworks": [
+          "Model Context Protocol (MCP)"
+        ],
+        "evidence": [
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/install-catalog-entry.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/mcp-doc.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/mcp-editor.tsx",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/mcp-logs.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/mcp-logs.tsx",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/mcp-status.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/use-mcp-draft.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/use-mcp-probes.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "apps/desktop/src/app/capabilities/mcp/use-mcp-servers.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/DESCRIPTION.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/SKILL.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/references",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/references/fastmcp-cli.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/scripts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/scripts/scaffold_fastmcp.py",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/templates",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/templates/api_wrapper.py",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/templates/database_server.py",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/fastmcp/templates/file_processor.py",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcp-oauth-remote-gateway",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcp-oauth-remote-gateway/SKILL.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcp-oauth-remote-gateway/references",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcp-oauth-remote-gateway/references/stripe-mcp-oauth-revocation.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcp-oauth-remote-gateway/scripts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcp-oauth-remote-gateway/scripts/diagnose-oauth-mcp.py",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcporter",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "optional-skills/mcp/mcporter/SKILL.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "website/docs/user-guide/skills/optional/mcp/mcp-fastmcp.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "website/docs/user-guide/skills/optional/mcp/mcp-mcp-oauth-remote-gateway.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "website/docs/user-guide/skills/optional/mcp/mcp-mcporter.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/skills/optional/mcp/mcp-fastmcp.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/skills/optional/mcp/mcp-mcporter.md",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "dependency",
+            "match": "Python: mcp",
+            "confidence": 0.95,
+            "details": "Dependency 'mcp' belongs to Model Context Protocol (MCP)"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          },
+          {
+            "type": "description",
+            "match": "Repo Name: hermes-agent",
+            "confidence": 0.85,
+            "details": "Repository name contains agent designation: 'hermes-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:03.633968+00:00"
+    },
+    {
+      "name": "Agent-Reach",
+      "full_name": "Panniantong/Agent-Reach",
+      "html_url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "default_branch": "main",
+      "stars": 113924,
+      "forks": 10232,
+      "primary_language": "Python",
+      "topics": [
+        "agent-infrastructure",
+        "ai-agent",
+        "ai-search",
+        "automation",
+        "bilibili",
+        "claude-code",
+        "cli",
+        "cursor",
+        "free-api",
+        "llm-tools",
+        "mcp",
+        "python",
+        "reddit-scraper",
+        "twitter-scraper",
+        "web-scraper",
+        "xiaohongshu",
+        "youtube-transcript"
+      ],
+      "created_at": "2026-02-24T02:10:24Z",
+      "pushed_at": "2026-11-22T15:12:07Z",
+      "is_ai_powered": true,
+      "detected_tools": [
+        {
+          "tool_name": "Claude Code",
+          "category": "coding_assistant",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "type": "commit",
+              "match": "fix(opencli): test OpenCLI 2.0.3 so LinkedIn jobs work on Chinese pages; ask for",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            }
+          ]
+        }
+      ],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Repo Name: agent-reach",
+            "confidence": 0.85,
+            "details": "Repository name contains agent designation: 'agent-reach'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:04.714673+00:00"
+    },
+    {
+      "name": "career-ops",
+      "full_name": "career-ops-hq/career-ops",
+      "html_url": "https://github.com/career-ops-hq/career-ops",
+      "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
+      "default_branch": "main",
+      "stars": 84142,
+      "forks": 15396,
+      "primary_language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "ai-agent",
+        "ai-job-search",
+        "ats",
+        "career",
+        "career-ops",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-plugin",
+        "cover-letter",
+        "cv",
+        "good-first-issue",
+        "interview-preparation",
+        "interview-questions",
+        "job-application",
+        "job-hunting",
+        "job-search",
+        "latex",
+        "open-source",
+        "resume"
+      ],
+      "created_at": "2026-04-04T18:21:18Z",
+      "pushed_at": "2026-11-22T15:20:40Z",
+      "is_ai_powered": true,
+      "detected_tools": [
+        {
+          "tool_name": "Claude Code",
+          "category": "coding_assistant",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "type": "config",
+              "match": ".claude/skills",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": ".claude/skills/career-ops",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": ".claude/skills/career-ops/SKILL.md",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": "CLAUDE.md",
+              "confidence": 0.98,
+              "details": "Matched configuration marker: CLAUDE.md"
+            },
+            {
+              "type": "commit",
+              "match": "fix(dashboard): own pending follow-up repairs by application, not by selector (#",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            }
+          ]
+        },
+        {
+          "tool_name": "GitHub Copilot",
+          "category": "coding_assistant",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "type": "config",
+              "match": ".github/copilot-instructions.md",
+              "confidence": 0.95,
+              "details": "Matched configuration marker: .github/copilot-instructions.md"
+            }
+          ]
+        },
+        {
+          "tool_name": "v0 / Bolt / Lovable",
+          "category": "app_generator",
+          "confidence": 0.9,
+          "evidence": [
+            {
+              "type": "config",
+              "match": "web/src/components/ui/badge.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/button.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/card.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/modal.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/skeleton.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/stat-card.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            }
+          ]
+        }
+      ],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.95,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "config",
+            "match": "plugins-registry/workspace-mcp.json",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:07.093036+00:00"
+    },
+    {
+      "name": "learn-claude-code",
+      "full_name": "shareAI-lab/learn-claude-code",
+      "html_url": "https://github.com/shareAI-lab/learn-claude-code",
+      "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "default_branch": "main",
+      "stars": 80726,
+      "forks": 12880,
+      "primary_language": "Python",
+      "topics": [
+        "agent",
+        "agent-development",
+        "ai-agent",
+        "claude",
+        "claude-code",
+        "educational",
+        "llm",
+        "python",
+        "teaching",
+        "tutorial"
+      ],
+      "created_at": "2025-06-29T15:34:15Z",
+      "pushed_at": "2026-11-15T13:41:46Z",
+      "is_ai_powered": true,
+      "detected_tools": [
+        {
+          "tool_name": "v0 / Bolt / Lovable",
+          "category": "app_generator",
+          "confidence": 0.9,
+          "evidence": [
+            {
+              "type": "config",
+              "match": "web/src/components/ui/badge.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/card.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
+              "match": "web/src/components/ui/tabs.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            }
+          ]
+        }
+      ],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:08.501404+00:00"
+    },
+    {
+      "name": "ppt-master",
+      "full_name": "hugohe3/ppt-master",
+      "html_url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "default_branch": "main",
+      "stars": 79238,
+      "forks": 6171,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "aippt",
+        "office",
+        "powerpoint",
+        "powerpoint-generation",
+        "ppt",
+        "pptx",
+        "presentation",
+        "slide",
+        "slides"
+      ],
+      "created_at": "2025-12-10T06:54:33Z",
+      "pushed_at": "2026-11-20T08:41:50Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -44,31 +1333,284 @@
         }
       ],
       "agent_detection": {
-        "is_agent_project": false,
-        "confidence": 0.0,
-        "categories": [],
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
         "frameworks": [],
-        "evidence": []
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
       },
-      "scan_timestamp": "2026-11-22T14:55:09.447897+00:00"
+      "scan_timestamp": "2026-11-22T15:21:09.484390+00:00"
     },
     {
-      "name": "Workspace-Intelligence-Agent",
-      "full_name": "jmreddy2106/Workspace-Intelligence-Agent",
-      "html_url": "https://github.com/jmreddy2106/Workspace-Intelligence-Agent",
-      "description": "Workspace Intelligence Agent (WIA) is an AI-powered multi-agent platform that centralizes workplace knowledge, automates workflows, and provides context-aware assistance. Using LLMs and RAG, it enables intelligent document search, task automation, and faster decision-making to improve team productivity.",
+      "name": "Front-End-Checklist",
+      "full_name": "thedaviddias/Front-End-Checklist",
+      "html_url": "https://github.com/thedaviddias/Front-End-Checklist",
+      "description": "🗂 The essential checklist for modern web development, for humans and AI agents",
       "default_branch": "main",
-      "stars": 0,
-      "forks": 0,
-      "primary_language": null,
-      "topics": [],
-      "created_at": "2026-09-28T14:50:25Z",
-      "pushed_at": "2026-09-28T06:09:32Z",
+      "stars": 74796,
+      "forks": 6767,
+      "primary_language": "MDX",
+      "topics": [
+        "ai-agent",
+        "ai-agents",
+        "checklist",
+        "css",
+        "front-end-developer-tool",
+        "front-end-development",
+        "frontend",
+        "guidelines",
+        "html",
+        "javascript",
+        "lists",
+        "reference",
+        "resources",
+        "rules",
+        "web-development"
+      ],
+      "created_at": "2017-10-16T10:12:36Z",
+      "pushed_at": "2026-10-31T05:44:22Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
         "is_agent_project": true,
-        "confidence": 0.88,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:09.597517+00:00"
+    },
+    {
+      "name": "daily_stock_analysis",
+      "full_name": "ZhuLinsen/daily_stock_analysis",
+      "html_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "default_branch": "main",
+      "stars": 73696,
+      "forks": 58054,
+      "primary_language": "Python",
+      "topics": [
+        "a-stock",
+        "ai-agent",
+        "aigc",
+        "llm",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading"
+      ],
+      "created_at": "2026-01-10T06:43:20Z",
+      "pushed_at": "2026-11-22T03:22:02Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:09.705455+00:00"
+    },
+    {
+      "name": "ai-agent-book",
+      "full_name": "bojieli/ai-agent-book",
+      "html_url": "https://github.com/bojieli/ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "default_branch": "main",
+      "stars": 59073,
+      "forks": 6936,
+      "primary_language": "Python",
+      "topics": [
+        "agent",
+        "agent-memory",
+        "ai-agent",
+        "book",
+        "coding-agent",
+        "context-engineering",
+        "large-language-models",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "multimodal",
+        "rag",
+        "reinforcement-learning"
+      ],
+      "created_at": "2025-09-09T02:41:44Z",
+      "pushed_at": "2026-11-22T15:08:35Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Repo Name: ai-agent-book",
+            "confidence": 0.85,
+            "details": "Repository name contains agent designation: 'ai-agent-book'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:09.819011+00:00"
+    },
+    {
+      "name": "nanobot",
+      "full_name": "HKUDS/nanobot",
+      "html_url": "https://github.com/HKUDS/nanobot",
+      "description": "Your lightweight open-source personal agent.",
+      "default_branch": "main",
+      "stars": 50268,
+      "forks": 8761,
+      "primary_language": "Python",
+      "topics": [
+        "agent-framework",
+        "ai-agent",
+        "ai-agents",
+        "chatbot",
+        "chatops",
+        "discord-bot",
+        "llm-agents",
+        "llms",
+        "local-llm",
+        "mcp",
+        "model-context-protocol",
+        "multi-agent",
+        "openai-compatible",
+        "openclaw",
+        "personal-ai-assistant",
+        "python",
+        "self-hosted",
+        "telegram-bot-ai-assistant",
+        "webui",
+        "workflow-automation"
+      ],
+      "created_at": "2026-02-01T07:16:15Z",
+      "pushed_at": "2026-11-22T13:56:50Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Model Context Protocol (MCP)"
+        ],
+        "frameworks": [
+          "Model Context Protocol (MCP)"
+        ],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: model-context-protocol",
+            "confidence": 0.9,
+            "details": "GitHub repository topic matches Model Context Protocol (MCP)"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:09.957514+00:00"
+    },
+    {
+      "name": "CowAgent",
+      "full_name": "zhayujie/CowAgent",
+      "html_url": "https://github.com/zhayujie/CowAgent",
+      "description": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
+      "default_branch": "master",
+      "stars": 48043,
+      "forks": 10444,
+      "primary_language": "Python",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "chatgpt-on-wechat",
+        "claude",
+        "claude-code",
+        "codex",
+        "cowagent",
+        "deepseek",
+        "harness",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "openai",
+        "openclaw",
+        "personal-agent",
+        "skills"
+      ],
+      "created_at": "2022-08-07T08:33:41Z",
+      "pushed_at": "2026-11-22T13:35:48Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
         "categories": [
           "General Agent Framework",
           "Multi-Agent System"
@@ -76,10 +1618,1748 @@
         "frameworks": [],
         "evidence": [
           {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          },
+          {
             "type": "description",
-            "match": "Repo Name: workspace-intelligence-agent",
+            "match": "Desc: multi-agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'multi-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.070194+00:00"
+    },
+    {
+      "name": "siyuan",
+      "full_name": "siyuan-note/siyuan",
+      "html_url": "https://github.com/siyuan-note/siyuan",
+      "description": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
+      "default_branch": "master",
+      "stars": 47340,
+      "forks": 3130,
+      "primary_language": "TypeScript",
+      "topics": [
+        "agentic-ai",
+        "ai-agent",
+        "knowledge-base",
+        "local-first",
+        "markdown",
+        "mcp",
+        "mindmap",
+        "note-taking",
+        "self-hosted",
+        "siyuan",
+        "workspace"
+      ],
+      "created_at": "2020-08-30T09:21:35Z",
+      "pushed_at": "2026-11-22T14:14:14Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: agentic-ai",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'agentic-ai'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.179026+00:00"
+    },
+    {
+      "name": "Codewhale",
+      "full_name": "codewhale-hq/Codewhale",
+      "html_url": "https://github.com/codewhale-hq/Codewhale",
+      "description": "An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line of it is yours to read.",
+      "default_branch": "main",
+      "stars": 41198,
+      "forks": 3573,
+      "primary_language": "Rust",
+      "topics": [
+        "agent-client-protocol",
+        "agent-orchestration",
+        "ai-agent",
+        "ai-coding",
+        "cli",
+        "coding-agent",
+        "deepseek",
+        "developer-tools",
+        "llm",
+        "local-llm",
+        "mcp",
+        "multi-agent",
+        "ollama",
+        "open-source",
+        "openai-compatible",
+        "rust",
+        "terminal",
+        "tui"
+      ],
+      "created_at": "2026-01-19T18:21:01Z",
+      "pushed_at": "2026-11-22T14:46:09Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.306598+00:00"
+    },
+    {
+      "name": "oh-my-pi",
+      "full_name": "can1357/oh-my-pi",
+      "html_url": "https://github.com/can1357/oh-my-pi",
+      "description": "⌥ Coding agent with the IDE wired in. Built by Stencil Labs.",
+      "default_branch": "main",
+      "stars": 39641,
+      "forks": 4578,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai-agent",
+        "ai-coding-agent",
+        "anthropic",
+        "bun",
+        "claude",
+        "cli",
+        "coding-assistant",
+        "llm",
+        "mcp",
+        "multi-provider",
+        "openai",
+        "rust",
+        "terminal",
+        "tui",
+        "typescript"
+      ],
+      "created_at": "2025-12-31T14:01:28Z",
+      "pushed_at": "2026-11-22T15:01:42Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.425726+00:00"
+    },
+    {
+      "name": "CopilotKit",
+      "full_name": "CopilotKit/CopilotKit",
+      "html_url": "https://github.com/CopilotKit/CopilotKit",
+      "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol",
+      "default_branch": "main",
+      "stars": 38879,
+      "forks": 4841,
+      "primary_language": "TypeScript",
+      "topics": [
+        "agent",
+        "agent-native",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agent",
+        "ai-assistant",
+        "assistant",
+        "assistant-chat-bots",
+        "copilot",
+        "copilot-chat",
+        "generative-ui",
+        "js",
+        "llm",
+        "nextjs",
+        "open-source",
+        "react",
+        "reactjs",
+        "ts",
+        "typescript"
+      ],
+      "created_at": "2023-06-19T04:08:31Z",
+      "pushed_at": "2026-11-22T00:56:53Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: agentic-ai",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'agentic-ai'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.546422+00:00"
+    },
+    {
+      "name": "Vibe-Trading",
+      "full_name": "HKUDS/Vibe-Trading",
+      "html_url": "https://github.com/HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "default_branch": "main",
+      "stars": 38683,
+      "forks": 6314,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "algorithmic-trading",
+        "backtesting",
+        "fintech",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "python",
+        "quantitative-finance",
+        "trading"
+      ],
+      "created_at": "2026-04-01T09:52:20Z",
+      "pushed_at": "2026-11-22T15:18:05Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.662584+00:00"
+    },
+    {
+      "name": "QwenPaw",
+      "full_name": "agentscope-ai/QwenPaw",
+      "html_url": "https://github.com/agentscope-ai/QwenPaw",
+      "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+      "default_branch": "main",
+      "stars": 38102,
+      "forks": 3307,
+      "primary_language": "Python",
+      "topics": [
+        "agent",
+        "agent-harness",
+        "agentscope",
+        "ai-agent",
+        "ai-agents",
+        "chatbot",
+        "harness-engineering",
+        "llm-tools",
+        "llms",
+        "loop-engineering",
+        "mcp",
+        "personal-ai-assistant",
+        "self-hosted",
+        "skills",
+        "super-agent",
+        "webui"
+      ],
+      "created_at": "2026-02-24T03:42:56Z",
+      "pushed_at": "2026-11-20T10:01:55Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.789104+00:00"
+    },
+    {
+      "name": "DeepSeek-Reasonix",
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "html_url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "description": "A reliable coding agent for complex software engineering tasks.",
+      "default_branch": "studio",
+      "stars": 36083,
+      "forks": 2607,
+      "primary_language": "Go",
+      "topics": [
+        "agent",
+        "agent-framework",
+        "ai-agent",
+        "ai-coding",
+        "cli",
+        "coding-agent",
+        "deepseek",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "ink",
+        "llm",
+        "prompt-caching",
+        "r1",
+        "terminal",
+        "tool-use",
+        "tui",
+        "typescript"
+      ],
+      "created_at": "2026-04-21T08:27:02Z",
+      "pushed_at": "2026-11-12T08:30:31Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:10.908533+00:00"
+    },
+    {
+      "name": "openclaude",
+      "full_name": "Twigpine/openclaude",
+      "html_url": "https://github.com/Twigpine/openclaude",
+      "description": "runs anywhere. uses anything",
+      "default_branch": "main",
+      "stars": 34482,
+      "forks": 9118,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-tools",
+        "cli",
+        "coding"
+      ],
+      "created_at": "2026-04-01T03:15:49Z",
+      "pushed_at": "2026-11-21T01:25:53Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.031107+00:00"
+    },
+    {
+      "name": "AionUi",
+      "full_name": "iOfficeAI/AionUi",
+      "html_url": "https://github.com/iOfficeAI/AionUi",
+      "description": "Open-source 24/7 Cowork app for OpenClaw, Hermes, Claude Code, Codex, OpenCode and 20+ more CLI Agent | Customize your assistants | Team them up｜Star if you like it!",
+      "default_branch": "main",
+      "stars": 34431,
+      "forks": 3601,
+      "primary_language": "TypeScript",
+      "topics": [
+        "acp",
+        "agent-team",
+        "ai",
+        "ai-agent",
+        "chat",
+        "chatbot",
+        "claude-code",
+        "clawdbot",
+        "codex",
+        "cowork",
+        "gemini",
+        "gemini-cli",
+        "hermes",
+        "llm",
+        "nano-banana",
+        "office",
+        "openclaw",
+        "opencode",
+        "skills",
+        "webui"
+      ],
+      "created_at": "2025-08-07T10:29:51Z",
+      "pushed_at": "2026-11-05T05:31:20Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.163125+00:00"
+    },
+    {
+      "name": "cua",
+      "full_name": "trycua/cua",
+      "html_url": "https://github.com/trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS sandboxes, and benchmarks for training, evaluation, and data generation.",
+      "default_branch": "main",
+      "stars": 32772,
+      "forks": 2485,
+      "primary_language": "Rust",
+      "topics": [
+        "agent",
+        "ai-agent",
+        "apple",
+        "computer-use",
+        "computer-use-agent",
+        "containerization",
+        "cua",
+        "desktop-automation",
+        "hacktoberfest",
+        "lume",
+        "macos",
+        "manus",
+        "operator",
+        "swift",
+        "virtualization",
+        "virtualization-framework",
+        "windows",
+        "windows-sandbox"
+      ],
+      "created_at": "2025-01-31T15:02:49Z",
+      "pushed_at": "2026-11-22T15:01:45Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.272586+00:00"
+    },
+    {
+      "name": "Jobs_Applier_AI_Agent",
+      "full_name": "feder-cr/Jobs_Applier_AI_Agent",
+      "html_url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent",
+      "description": "AIHawk: AI job application bot, automated job search, job hunting, auto-apply to resume-matching jobs while you sleep.",
+      "default_branch": "main",
+      "stars": 32609,
+      "forks": 4777,
+      "primary_language": "Python",
+      "topics": [
+        "agentic-ai",
+        "ai-agent",
+        "ai-automation",
+        "aihawk",
+        "automation",
+        "autonomous-agents",
+        "browser-automation",
+        "cv",
+        "firefox",
+        "hr",
+        "job-board",
+        "job-search",
+        "jobs",
+        "linkedin",
+        "playwright",
+        "python",
+        "recruiting",
+        "recruitment",
+        "resume",
+        "terminal-app"
+      ],
+      "created_at": "2024-08-04T12:15:06Z",
+      "pushed_at": "2026-11-22T07:51:35Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: agentic-ai",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'agentic-ai'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: autonomous-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'autonomous-agents'"
+          },
+          {
+            "type": "description",
+            "match": "Repo Name: jobs_applier_ai_agent",
             "confidence": 0.85,
-            "details": "Repository name contains agent designation: 'workspace-intelligence-agent'"
+            "details": "Repository name contains agent designation: 'jobs_applier_ai_agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.398088+00:00"
+    },
+    {
+      "name": "cli",
+      "full_name": "googleworkspace/cli",
+      "html_url": "https://github.com/googleworkspace/cli",
+      "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+      "default_branch": "main",
+      "stars": 32442,
+      "forks": 2005,
+      "primary_language": "Rust",
+      "topics": [
+        "agent-skills",
+        "ai-agent",
+        "automation",
+        "cli",
+        "discovery-api",
+        "gemini-cli-extension",
+        "google-admin",
+        "google-api",
+        "google-calendar",
+        "google-chat",
+        "google-docs",
+        "google-drive",
+        "google-sheets",
+        "google-workspace",
+        "oauth2",
+        "rust"
+      ],
+      "created_at": "2026-03-02T19:46:06Z",
+      "pushed_at": "2026-11-20T14:06:28Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.516636+00:00"
+    },
+    {
+      "name": "OpenCLI",
+      "full_name": "jackwener/OpenCLI",
+      "html_url": "https://github.com/jackwener/OpenCLI",
+      "description": "Make Any Website into CLI & Use your logged-in browser by AI agent. ",
+      "default_branch": "main",
+      "stars": 31223,
+      "forks": 3055,
+      "primary_language": "JavaScript",
+      "topics": [
+        "ai-agent",
+        "ai-agents",
+        "ai-tools",
+        "browser-automation",
+        "browser-use",
+        "cli",
+        "playwright"
+      ],
+      "created_at": "2026-03-14T22:10:23Z",
+      "pushed_at": "2026-11-07T17:39:55Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.621232+00:00"
+    },
+    {
+      "name": "TencentDB-Agent-Memory",
+      "full_name": "TencentCloud/TencentDB-Agent-Memory",
+      "html_url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "default_branch": "feat/server_team",
+      "stars": 31098,
+      "forks": 3047,
+      "primary_language": "TypeScript",
+      "topics": [
+        "agent",
+        "ai-agent",
+        "embedding",
+        "llm",
+        "local-first",
+        "long-term-memory",
+        "memory",
+        "openclaw-plugin",
+        "vector-search"
+      ],
+      "created_at": "2026-04-07T06:34:26Z",
+      "pushed_at": "2026-11-19T12:43:39Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Repo Name: tencentdb-agent-memory",
+            "confidence": 0.85,
+            "details": "Repository name contains agent designation: 'tencentdb-agent-memory'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.723029+00:00"
+    },
+    {
+      "name": "qwen-code",
+      "full_name": "QwenLM/qwen-code",
+      "html_url": "https://github.com/QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "default_branch": "main",
+      "stars": 30861,
+      "forks": 3580,
+      "primary_language": "TypeScript",
+      "topics": [
+        "agentic",
+        "ai",
+        "ai-agent",
+        "ai-coding",
+        "cli",
+        "coding-agent",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "qwen",
+        "terminal",
+        "typescript"
+      ],
+      "created_at": "2025-06-26T01:37:46Z",
+      "pushed_at": "2026-11-22T15:11:13Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.844567+00:00"
+    },
+    {
+      "name": "guizang-ppt-skill",
+      "full_name": "op7418/guizang-ppt-skill",
+      "html_url": "https://github.com/op7418/guizang-ppt-skill",
+      "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.",
+      "default_branch": "main",
+      "stars": 30256,
+      "forks": 2079,
+      "primary_language": "HTML",
+      "topics": [
+        "ai-agent",
+        "claude-code",
+        "codex",
+        "html-deck",
+        "image-generation",
+        "ppt",
+        "presentation",
+        "skill",
+        "skills",
+        "swiss-design",
+        "web-ppt"
+      ],
+      "created_at": "2026-04-23T13:23:07Z",
+      "pushed_at": "2026-10-30T12:45:28Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:11.967139+00:00"
+    },
+    {
+      "name": "dsh-Go",
+      "full_name": "ccch1mneyyy/dsh-Go",
+      "html_url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "default_branch": "main",
+      "stars": 30054,
+      "forks": 1439,
+      "primary_language": "Dart",
+      "topics": [
+        "ai-agent",
+        "android",
+        "android-app",
+        "coding-agent",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "dsh-tui",
+        "flutter",
+        "llm"
+      ],
+      "created_at": "2026-10-25T08:09:52Z",
+      "pushed_at": "2026-11-22T15:19:48Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.080164+00:00"
+    },
+    {
+      "name": "distilly",
+      "full_name": "titanwings/distilly",
+      "html_url": "https://github.com/titanwings/distilly",
+      "description": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.",
+      "default_branch": "dot-skill",
+      "stars": 26773,
+      "forks": 2286,
+      "primary_language": "Python",
+      "topics": [
+        "agent-skills",
+        "agentic-ai",
+        "ai-agent",
+        "ai-agents",
+        "ai-assistants",
+        "ai-persona",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "codex-skills",
+        "deepseek-harness",
+        "digital-human",
+        "dsh-plugin",
+        "hermes-agent",
+        "knowledge-distillation",
+        "llm-agent",
+        "meta-skill",
+        "openclaw",
+        "personal-agent"
+      ],
+      "created_at": "2026-03-30T05:22:23Z",
+      "pushed_at": "2026-10-13T05:57:17Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: agentic-ai",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'agentic-ai'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.192883+00:00"
+    },
+    {
+      "name": "learn-harness-engineering",
+      "full_name": "walkinglabs/learn-harness-engineering",
+      "html_url": "https://github.com/walkinglabs/learn-harness-engineering",
+      "description": "Harness engineering beginner tutorial, from 0 to 1",
+      "default_branch": "main",
+      "stars": 25845,
+      "forks": 2972,
+      "primary_language": "TypeScript",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-ai",
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "dsh",
+        "dsh-plugin",
+        "harness",
+        "harness-engineering",
+        "harness-framework",
+        "llm"
+      ],
+      "created_at": "2026-03-29T12:28:19Z",
+      "pushed_at": "2026-11-21T05:34:15Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: agentic-ai",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'agentic-ai'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.310639+00:00"
+    },
+    {
+      "name": "activepieces",
+      "full_name": "activepieces/activepieces",
+      "html_url": "https://github.com/activepieces/activepieces",
+      "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "default_branch": "main",
+      "stars": 25679,
+      "forks": 4495,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai-agent",
+        "ai-agent-tools",
+        "ai-agents",
+        "ai-agents-framework",
+        "mcp",
+        "mcp-server",
+        "mcp-tools",
+        "mcps",
+        "n8n-alternative",
+        "no-code-automation",
+        "workflow",
+        "workflow-automation",
+        "workflows"
+      ],
+      "created_at": "2022-12-03T02:52:46Z",
+      "pushed_at": "2026-11-22T15:20:09Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Model Context Protocol (MCP)"
+        ],
+        "frameworks": [
+          "Model Context Protocol (MCP)"
+        ],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: mcp-server",
+            "confidence": 0.9,
+            "details": "GitHub repository topic matches Model Context Protocol (MCP)"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.433357+00:00"
+    },
+    {
+      "name": "nocobase",
+      "full_name": "nocobase/nocobase",
+      "html_url": "https://github.com/nocobase/nocobase",
+      "description": "NocoBase is the open-source platform for building, running, and evolving business systems with AI. Agents write the code and do the work, NocoBase provides the foundation and governance, and people make the decisions.",
+      "default_branch": "v3",
+      "stars": 24980,
+      "forks": 2956,
+      "primary_language": "TypeScript",
+      "topics": [
+        "admin-dashboard",
+        "agent-skills",
+        "agentic-ai",
+        "ai-agent",
+        "ai-agents",
+        "ai-governance",
+        "claude-code",
+        "codex",
+        "crm",
+        "crud",
+        "erp",
+        "internal-tools",
+        "low-code",
+        "no-code",
+        "opencode",
+        "rbac",
+        "self-hosted",
+        "vibe-coding",
+        "workflow-engine",
+        "workflows"
+      ],
+      "created_at": "2020-10-24T07:27:48Z",
+      "pushed_at": "2026-11-22T15:17:09Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: agentic-ai",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'agentic-ai'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.553800+00:00"
+    },
+    {
+      "name": "ego-lite",
+      "full_name": "citrolabs/ego-lite",
+      "html_url": "https://github.com/citrolabs/ego-lite",
+      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+      "default_branch": "main",
+      "stars": 24016,
+      "forks": 1363,
+      "primary_language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "ai-agent",
+        "automation",
+        "browser",
+        "browser-automation",
+        "claude-code",
+        "codex",
+        "hermes-agent",
+        "skills",
+        "skills-sh"
+      ],
+      "created_at": "2026-04-16T12:51:09Z",
+      "pushed_at": "2026-11-22T04:24:12Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.676852+00:00"
+    },
+    {
+      "name": "ai-guide",
+      "full_name": "liyupi/ai-guide",
+      "html_url": "https://github.com/liyupi/ai-guide",
+      "description": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude / GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程（Harness Engineering）、AI 工具用法（Cursor / Claude Code / TRAE / Codex / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档 aiguide，已升级为鱼皮 AI 导航网站",
+      "default_branch": "main",
+      "stars": 22302,
+      "forks": 2422,
+      "primary_language": "JavaScript",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "artificial-intelligence",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor",
+        "deep-learning",
+        "deepseek",
+        "gemini",
+        "generative-ai",
+        "gpt",
+        "llm",
+        "mcp",
+        "openai",
+        "rag",
+        "vibe-coding",
+        "vibecoding",
+        "vuepress"
+      ],
+      "created_at": "2025-02-13T05:47:46Z",
+      "pushed_at": "2026-11-12T02:10:38Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.804291+00:00"
+    },
+    {
+      "name": "teable",
+      "full_name": "teableio/teable",
+      "html_url": "https://github.com/teableio/teable",
+      "description": "✨ AI Spreadsheet for Business",
+      "default_branch": "develop",
+      "stars": 22008,
+      "forks": 1368,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai-agent",
+        "airtable",
+        "airtable-alternative",
+        "app-builder",
+        "database",
+        "internal-tool",
+        "low-code",
+        "no-code",
+        "postgres",
+        "postgresql",
+        "sandbox",
+        "spreadsheet"
+      ],
+      "created_at": "2022-11-01T07:02:49Z",
+      "pushed_at": "2026-11-22T13:12:32Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:12.911525+00:00"
+    },
+    {
+      "name": "jcode",
+      "full_name": "1jehuang/jcode",
+      "html_url": "https://github.com/1jehuang/jcode",
+      "description": "High performance coding agent harness written in Rust, built for heavy multi-agent dev workflows",
+      "default_branch": "master",
+      "stars": 21989,
+      "forks": 2573,
+      "primary_language": "Rust",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-coding-agent",
+        "claude",
+        "cli",
+        "coding-agent",
+        "llm",
+        "mcp",
+        "openai",
+        "rust",
+        "terminal",
+        "tui"
+      ],
+      "created_at": "2026-01-05T09:43:36Z",
+      "pushed_at": "2026-11-22T13:28:16Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Multi-Agent System"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: multi-agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'multi-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.015492+00:00"
+    },
+    {
+      "name": "browser-harness",
+      "full_name": "browser-use/browser-harness",
+      "html_url": "https://github.com/browser-use/browser-harness",
+      "description": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT.",
+      "default_branch": "main",
+      "stars": 19192,
+      "forks": 1901,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "browser-agent",
+        "browser-automation",
+        "browser-use",
+        "browser-use-box",
+        "browser-use-cloud",
+        "cdp",
+        "chrome",
+        "chrome-devtools-protocol",
+        "claude-code",
+        "cloud-browser",
+        "codex",
+        "cursor",
+        "llm",
+        "mcp",
+        "persistent-browser",
+        "real-browser",
+        "telegram-agent",
+        "vps-agent",
+        "web-automation"
+      ],
+      "created_at": "2026-04-17T01:56:15Z",
+      "pushed_at": "2026-11-22T02:04:31Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.126192+00:00"
+    },
+    {
+      "name": "parlant",
+      "full_name": "emcie-co/parlant",
+      "html_url": "https://github.com/emcie-co/parlant",
+      "description": "Parlant lets you build and operate reliable CX and support agents from your own AI coding agents.",
+      "default_branch": "develop",
+      "stars": 18339,
+      "forks": 1556,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "customer-experience",
+        "customer-service",
+        "customer-success",
+        "lead-generation",
+        "llm",
+        "python"
+      ],
+      "created_at": "2024-02-15T20:16:15Z",
+      "pushed_at": "2026-11-21T21:20:36Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.243258+00:00"
+    },
+    {
+      "name": "OpenSandbox",
+      "full_name": "opensandbox-group/OpenSandbox",
+      "html_url": "https://github.com/opensandbox-group/OpenSandbox",
+      "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
+      "default_branch": "main",
+      "stars": 17793,
+      "forks": 1715,
+      "primary_language": "Go",
+      "topics": [
+        "aaif",
+        "ai",
+        "ai-agent",
+        "ai-infra",
+        "kubernetes",
+        "sandbox"
+      ],
+      "created_at": "2025-12-17T08:41:09Z",
+      "pushed_at": "2026-11-22T15:15:25Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.355878+00:00"
+    },
+    {
+      "name": "leon",
+      "full_name": "leon-ai/leon",
+      "html_url": "https://github.com/leon-ai/leon",
+      "description": "🧠 Leon is your open-source personal assistant.",
+      "default_branch": "develop",
+      "stars": 17704,
+      "forks": 1488,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-assistant",
+        "artificial-intelligence",
+        "assistant",
+        "automation",
+        "bot",
+        "chatbot",
+        "leon",
+        "nodejs",
+        "offline",
+        "personal-assistant",
+        "privacy",
+        "python",
+        "speech-recognition",
+        "speech-synthesis",
+        "speech-to-text",
+        "text-to-speech",
+        "virtual-assistant",
+        "voice-assistant"
+      ],
+      "created_at": "2019-02-10T12:25:12Z",
+      "pushed_at": "2026-11-22T15:20:22Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.478591+00:00"
+    },
+    {
+      "name": "ai-berkshire",
+      "full_name": "xbtlin/ai-berkshire",
+      "html_url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "default_branch": "main",
+      "stars": 17212,
+      "forks": 2543,
+      "primary_language": "HTML",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "anthropic",
+        "berkshire-hathaway",
+        "charlie-munger",
+        "china-stock",
+        "claude",
+        "claude-code",
+        "financial-analysis",
+        "fintech",
+        "fundamental-analysis",
+        "investment",
+        "investment-research",
+        "llm",
+        "mcp",
+        "portfolio-management",
+        "stock-analysis",
+        "stock-market",
+        "value-investing",
+        "warren-buffett"
+      ],
+      "created_at": "2026-04-07T11:19:51Z",
+      "pushed_at": "2026-11-21T17:50:41Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Multi-Agent System"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: multi-agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'multi-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.607653+00:00"
+    },
+    {
+      "name": "web-ui",
+      "full_name": "browser-use/web-ui",
+      "html_url": "https://github.com/browser-use/web-ui",
+      "description": "🖥️ Run AI Agent in your browser.",
+      "default_branch": "main",
+      "stars": 16665,
+      "forks": 2760,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "browser-automation",
+        "browser-use-box",
+        "cloud-browser"
+      ],
+      "created_at": "2025-01-02T01:29:44Z",
+      "pushed_at": "2026-09-25T03:56:21Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.725853+00:00"
+    },
+    {
+      "name": "docker-android",
+      "full_name": "budtmo/docker-android",
+      "html_url": "https://github.com/budtmo/docker-android",
+      "description": "Android in docker solution with noVNC supported, video recording, mcp server and AI-agent",
+      "default_branch": "master",
+      "stars": 16187,
+      "forks": 1798,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "android",
+        "android-emulator",
+        "aws",
+        "azure",
+        "cloud",
+        "docker",
+        "docker-android",
+        "emulator",
+        "gcp",
+        "genymotion",
+        "jenkins",
+        "kubernetes",
+        "mcp",
+        "mcp-server",
+        "mobile-app",
+        "novnc",
+        "ollama",
+        "selenium",
+        "vllm"
+      ],
+      "created_at": "2016-12-22T13:02:48Z",
+      "pushed_at": "2026-11-19T13:31:07Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Model Context Protocol (MCP)"
+        ],
+        "frameworks": [
+          "Model Context Protocol (MCP)"
+        ],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: mcp-server",
+            "confidence": 0.9,
+            "details": "GitHub repository topic matches Model Context Protocol (MCP)"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:13.845819+00:00"
+    },
+    {
+      "name": "cc-haha",
+      "full_name": "NanmiCoder/cc-haha",
+      "html_url": "https://github.com/NanmiCoder/cc-haha",
+      "description": "本地优先的跨平台 Claude Code / AI Agent 桌面工作台：多 Agent 协作、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、桌面宠物；支持微信、飞书、钉钉及 H5 等远程访问。 | Local-first Claude Code / AI Agent desktop workspace: multi-agent teams, Git worktrees, diffs, skills marketplace, multi-model, Computer Use, task-aware desktop pets; remote via WeChat, Feishu, DingTalk, Telegram, WhatsApp & H5.",
+      "default_branch": "main",
+      "stars": 15520,
+      "forks": 8614,
+      "primary_language": "TypeScript",
+      "topics": [
+        "agent",
+        "ai",
+        "ai-agent",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "coding-agent",
+        "computer-use",
+        "desktop-app",
+        "electron",
+        "llm",
+        "mcp",
+        "react",
+        "typescript"
+      ],
+      "created_at": "2026-03-31T17:30:14Z",
+      "pushed_at": "2026-11-22T14:00:46Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Multi-Agent System"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
           },
           {
             "type": "description",
@@ -89,85 +3369,376 @@
           },
           {
             "type": "description",
-            "match": "Desc: agent platform",
+            "match": "Desc: ai agent",
             "confidence": 0.88,
-            "details": "Description explicitly mentions 'agent platform'"
+            "details": "Description explicitly mentions 'ai agent'"
           }
         ]
       },
-      "scan_timestamp": "2026-11-22T14:55:11.649019+00:00"
+      "scan_timestamp": "2026-11-22T15:21:13.959197+00:00"
     },
     {
-      "name": "gendeptrace_benchmark",
-      "full_name": "jmreddy2106/gendeptrace_benchmark",
-      "html_url": "https://github.com/jmreddy2106/gendeptrace_benchmark",
-      "description": "Evidence-aware dependency governance for generative-AI-generated software.",
+      "name": "waoowaoo",
+      "full_name": "waooAI/waoowaoo",
+      "html_url": "https://github.com/waooAI/waoowaoo",
+      "description": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.",
       "default_branch": "main",
-      "stars": 0,
-      "forks": 0,
-      "primary_language": "Python",
-      "topics": [],
-      "created_at": "2026-09-16T17:55:40Z",
-      "pushed_at": "2026-09-17T15:25:24Z",
-      "is_ai_powered": false,
+      "stars": 14967,
+      "forks": 3229,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai-agent",
+        "ai-agents",
+        "automation",
+        "film-production",
+        "generative-ai",
+        "short-drama",
+        "storyboard",
+        "video-generation"
+      ],
+      "created_at": "2026-01-22T12:09:36Z",
+      "pushed_at": "2026-09-21T10:39:25Z",
+      "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
-        "is_agent_project": false,
-        "confidence": 0.0,
-        "categories": [],
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework",
+          "Multi-Agent System"
+        ],
         "frameworks": [],
-        "evidence": []
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: agent platform",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'agent platform'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
       },
-      "scan_timestamp": "2026-11-22T14:55:12.699911+00:00"
+      "scan_timestamp": "2026-11-22T15:21:14.074718+00:00"
     },
     {
-      "name": "jmreddy2106",
-      "full_name": "jmreddy2106/jmreddy2106",
-      "html_url": "https://github.com/jmreddy2106/jmreddy2106",
-      "description": "Config files for my GitHub profile.",
+      "name": "E2B",
+      "full_name": "e2b-dev/E2B",
+      "html_url": "https://github.com/e2b-dev/E2B",
+      "description": "Open-source, secure environment with real-world tools for enterprise-grade agents.",
       "default_branch": "main",
-      "stars": 0,
-      "forks": 0,
+      "stars": 14963,
+      "forks": 1181,
+      "primary_language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "code-interpreter",
+        "copilot",
+        "development",
+        "devtools",
+        "gpt",
+        "gpt-4",
+        "javascript",
+        "llm",
+        "nextjs",
+        "openai",
+        "python",
+        "react",
+        "software",
+        "typescript"
+      ],
+      "created_at": "2023-03-04T13:41:18Z",
+      "pushed_at": "2026-11-21T00:09:18Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: ai-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:14.195524+00:00"
+    },
+    {
+      "name": "hermes-desktop",
+      "full_name": "fathah/hermes-desktop",
+      "html_url": "https://github.com/fathah/hermes-desktop",
+      "description": "Desktop Companion for Hermes Agent",
+      "default_branch": "main",
+      "stars": 14614,
+      "forks": 1640,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "autonomous-agents",
+        "chatbot",
+        "hermes",
+        "llm"
+      ],
+      "created_at": "2026-04-02T15:26:49Z",
+      "pushed_at": "2026-11-18T06:21:02Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: autonomous-agents",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'autonomous-agents'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:14.309313+00:00"
+    },
+    {
+      "name": "GenericAgent",
+      "full_name": "lsdefine/GenericAgent",
+      "html_url": "https://github.com/lsdefine/GenericAgent",
+      "description": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
+      "default_branch": "main",
+      "stars": 14441,
+      "forks": 1674,
+      "primary_language": "Python",
+      "topics": [
+        "ai-agent",
+        "automation",
+        "autonomous-agent",
+        "browser-automation",
+        "claude",
+        "computer-control",
+        "desktop-automation",
+        "gemini",
+        "lightweight",
+        "llm-agent",
+        "memory-system",
+        "python",
+        "self-evolving",
+        "skill-tree",
+        "task-automation"
+      ],
+      "created_at": "2026-01-16T15:45:24Z",
+      "pushed_at": "2026-11-20T03:34:26Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "topic",
+            "match": "Topic: autonomous-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'autonomous-agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:14.425560+00:00"
+    },
+    {
+      "name": "ian-xiaohei-illustrations",
+      "full_name": "helloianneo/ian-xiaohei-illustrations",
+      "html_url": "https://github.com/helloianneo/ian-xiaohei-illustrations",
+      "description": "中文小黑怪诞正文配图生成 Skill | 16:9 白底手绘 | 少量红橙蓝批注 | Codex Skill",
+      "default_branch": "main",
+      "stars": 13321,
+      "forks": 1516,
       "primary_language": null,
       "topics": [
-        "config",
-        "github-config"
+        "ai-agent",
+        "chinese",
+        "codex-skill",
+        "handdrawn",
+        "illustration",
+        "image-generation",
+        "xiaohei"
       ],
-      "created_at": "2021-09-02T21:07:40Z",
-      "pushed_at": "2026-08-29T18:00:40Z",
-      "is_ai_powered": false,
+      "created_at": "2026-05-27T22:47:56Z",
+      "pushed_at": "2026-10-27T01:41:18Z",
+      "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
-        "is_agent_project": false,
-        "confidence": 0.0,
-        "categories": [],
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
         "frameworks": [],
-        "evidence": []
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
       },
-      "scan_timestamp": "2026-11-22T14:55:13.472541+00:00"
+      "scan_timestamp": "2026-11-22T15:21:14.539517+00:00"
     },
     {
-      "name": "crypto-algorithms-demo",
-      "full_name": "jmreddy2106/crypto-algorithms-demo",
-      "html_url": "https://github.com/jmreddy2106/crypto-algorithms-demo",
-      "description": "A one-page classroom application demonstrating **DES, AES, RSA, Diffie-Hellman and RC4** with a React frontend and Flask/Python backend using PyCryptodome.",
+      "name": "autoclip",
+      "full_name": "zhouxiaoka/autoclip",
+      "html_url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
       "default_branch": "main",
-      "stars": 1,
-      "forks": 0,
+      "stars": 13251,
+      "forks": 2105,
       "primary_language": "Python",
-      "topics": [],
-      "created_at": "2026-08-27T17:02:36Z",
-      "pushed_at": "2026-08-27T17:04:45Z",
-      "is_ai_powered": false,
+      "topics": [
+        "ai-agent",
+        "ai-video-editor",
+        "content-repurposing",
+        "desktop-app",
+        "douyin",
+        "instagram-reels",
+        "mcp",
+        "open-source",
+        "podcast",
+        "subtitles",
+        "tiktok",
+        "video-clipping",
+        "video-editing-software",
+        "xiaohongshu",
+        "youtube-shorts"
+      ],
+      "created_at": "2025-07-08T04:51:15Z",
+      "pushed_at": "2026-11-22T12:53:41Z",
+      "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
-        "is_agent_project": false,
-        "confidence": 0.0,
-        "categories": [],
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
         "frameworks": [],
-        "evidence": []
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          }
+        ]
       },
-      "scan_timestamp": "2026-11-22T14:55:14.843519+00:00"
+      "scan_timestamp": "2026-11-22T15:21:14.650089+00:00"
+    },
+    {
+      "name": "genoffice",
+      "full_name": "genspark-ai/genoffice",
+      "html_url": "https://github.com/genspark-ai/genoffice",
+      "description": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.",
+      "default_branch": "main",
+      "stars": 12767,
+      "forks": 1780,
+      "primary_language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "claude-code",
+        "cli",
+        "codex",
+        "cursor",
+        "docx",
+        "excel",
+        "libreoffice-alternative",
+        "local-first",
+        "markdown-editor",
+        "microsoft-office-alternative",
+        "office-suite",
+        "pdf-editor",
+        "pdf-to-word",
+        "powerpoint",
+        "pptx",
+        "skills",
+        "spreadsheet",
+        "xlsx"
+      ],
+      "created_at": "2026-07-31T09:40:58Z",
+      "pushed_at": "2026-11-22T13:01:10Z",
+      "is_ai_powered": true,
+      "detected_tools": [],
+      "agent_detection": {
+        "is_agent_project": true,
+        "confidence": 0.92,
+        "categories": [
+          "General Agent Framework"
+        ],
+        "frameworks": [],
+        "evidence": [
+          {
+            "type": "topic",
+            "match": "Topic: ai-agent",
+            "confidence": 0.92,
+            "details": "Explicit AI Agent GitHub topic: 'ai-agent'"
+          },
+          {
+            "type": "description",
+            "match": "Desc: ai agent",
+            "confidence": 0.88,
+            "details": "Description explicitly mentions 'ai agent'"
+          }
+        ]
+      },
+      "scan_timestamp": "2026-11-22T15:21:14.776090+00:00"
     }
   ]
 }
