@@ -259,37 +259,39 @@ def generate_dashboard_html(summary: ScanSummary, output_path: str = "docs/index
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-label">Total Repos Scanned</div>
-        <div class="stat-value" id="stat-total">{summary.total_repos_scanned}</div>
-        <div class="stat-desc">Target public repositories</div>
+        <div class="stat-label">Claude Code Projects</div>
+        <div class="stat-value" style="color: var(--accent-amber);" id="stat-claude">{f"{summary.ecosystem_counts.get('Claude Code', 0):,}" if summary.ecosystem_counts else summary.tool_counts.get('Claude Code', 0)}</div>
+        <div class="stat-desc">Public GitHub Repositories</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">AI Tool Assisted</div>
-        <div class="stat-value" style="color: var(--accent)" id="stat-assisted">{summary.ai_assisted_repos_count}</div>
-        <div class="stat-desc">Claude Code, Cursor, Copilot, etc.</div>
+        <div class="stat-label">Public AI Agents</div>
+        <div class="stat-value" style="color: var(--accent-purple);" id="stat-agents">{f"{summary.ecosystem_counts.get('Autonomous AI Agents', 0):,}" if summary.ecosystem_counts else summary.agent_repos_count}</div>
+        <div class="stat-desc">Autonomous & Multi-Agent Repos</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">AI Agent Repos</div>
-        <div class="stat-value" style="color: var(--accent-purple)" id="stat-agents">{summary.agent_repos_count}</div>
-        <div class="stat-desc">LangGraph, CrewAI, AutoGen, MCP</div>
+        <div class="stat-label">Model Context Protocol</div>
+        <div class="stat-value" style="color: var(--accent-green);" id="stat-mcp">{f"{summary.ecosystem_counts.get('Model Context Protocol (MCP)', 0):,}" if summary.ecosystem_counts else 'Active'}</div>
+        <div class="stat-desc">MCP Servers & Tool Repos</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">AI Adoption Rate</div>
-        <div class="stat-value" style="color: var(--accent-green)" id="stat-rate">{summary.ai_adoption_rate}%</div>
-        <div class="stat-desc">Share of AI-powered projects</div>
+        <div class="stat-label">Tracked Public Index</div>
+        <div class="stat-value" style="color: var(--accent);" id="stat-total">{summary.total_repos_scanned}</div>
+        <div class="stat-desc">Indexed & Analyzed Repositories</div>
       </div>
     </div>
 
     <div class="controls">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="Search repository name, language, or AI tool...">
+        <input type="text" id="search-input" placeholder="Search public repositories by name, author, framework, or AI tool...">
       </div>
       <div class="filter-tabs">
-        <button class="filter-btn active" data-filter="all">All Repos</button>
-        <button class="filter-btn" data-filter="ai-only">AI Assisted</button>
+        <button class="filter-btn active" data-filter="all">All Public Repos</button>
         <button class="filter-btn" data-filter="agents-only">AI Agents</button>
         <button class="filter-btn" data-filter="claude">Claude Code</button>
+        <button class="filter-btn" data-filter="mcp">MCP Servers</button>
+        <button class="filter-btn" data-filter="langgraph">LangGraph</button>
+        <button class="filter-btn" data-filter="crewai">CrewAI</button>
         <button class="filter-btn" data-filter="cursor">Cursor</button>
       </div>
     </div>
@@ -342,6 +344,9 @@ def generate_dashboard_html(summary: ScanSummary, output_path: str = "docs/index
         if (currentFilter === 'agents-only' && (!repo.agent_detection || !repo.agent_detection.is_agent_project)) return false;
         if (currentFilter === 'claude' && !repo.detected_tools.some(t => t.tool_name.toLowerCase().includes('claude'))) return false;
         if (currentFilter === 'cursor' && !repo.detected_tools.some(t => t.tool_name.toLowerCase().includes('cursor'))) return false;
+        if (currentFilter === 'mcp' && !(repo.agent_detection.frameworks || []).some(f => f.toLowerCase().includes('mcp')) && !(repo.topics || []).some(t => t.toLowerCase().includes('mcp'))) return false;
+        if (currentFilter === 'langgraph' && !(repo.agent_detection.frameworks || []).some(f => f.toLowerCase().includes('langgraph')) && !(repo.topics || []).some(t => t.toLowerCase().includes('langgraph'))) return false;
+        if (currentFilter === 'crewai' && !(repo.agent_detection.frameworks || []).some(f => f.toLowerCase().includes('crewai')) && !(repo.topics || []).some(t => t.toLowerCase().includes('crewai'))) return false;
 
         // Search text
         if (query) {{

@@ -20,13 +20,28 @@ def generate_markdown_report(summary: ScanSummary, output_file: str = "AI_METRIC
 
     # Badges row
     lines.append("## 📊 Overview Badges\n")
+    if summary.ecosystem_counts:
+        lines.append("[![Public AI Agents](badges/global_agents.svg)](AI_METRICS.md) ")
+        lines.append("[![Claude Code Projects](badges/global_claude.svg)](AI_METRICS.md) ")
+        lines.append("[![MCP Servers](badges/global_mcp.svg)](AI_METRICS.md) ")
     lines.append("[![AI Adoption](badges/adoption_rate.svg)](AI_METRICS.md) ")
     lines.append("[![AI Agents](badges/agent_status.svg)](AI_METRICS.md) ")
-    lines.append("[![Top AI Tool](badges/ai_tools.svg)](AI_METRICS.md) ")
-    lines.append("[![AI Assisted](badges/ai_assisted.svg)](AI_METRICS.md)\n")
+    lines.append("[![Top AI Tool](badges/ai_tools.svg)](AI_METRICS.md)\n")
+
+    # Global Ecosystem Census Table (if present)
+    if summary.ecosystem_counts:
+        lines.append("## 🌐 Global GitHub Open-Source Census\n")
+        lines.append("*Live count of publicly available repositories discovered across all of GitHub:*\n")
+        lines.append("| Category / Technology | Total Public Repositories | Type |")
+        lines.append("| :--- | :---: | :--- |")
+        total_eco = sum(summary.ecosystem_counts.values()) or 1
+        for label, count in sorted(summary.ecosystem_counts.items(), key=lambda x: x[1], reverse=True):
+            category_tag = "AI Agent Ecosystem" if ("Agent" in label or "MCP" in label or "Crew" in label or "Lang" in label or "Auto" in label or "Eliza" in label) else "AI Coding Assistant"
+            lines.append(f"| **{label}** | **{count:,}** | {category_tag} |")
+        lines.append("")
 
     # Metrics Summary Table
-    lines.append("### 📈 Key Performance Indicators\n")
+    lines.append("### 📈 Tracked Sample Overview\n")
     lines.append("| Metric | Value | Description |")
     lines.append("| :--- | :--- | :--- |")
     lines.append(f"| **Total Repositories Scanned** | **{summary.total_repos_scanned}** | Public repositories evaluated |")

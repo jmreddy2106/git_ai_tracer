@@ -36,6 +36,15 @@ def render_svg_badge(label: str, value: str, color_a: str = "#24292e", color_b: 
 </svg>"""
 
 
+def format_compact_number(n: int) -> str:
+    """Format large numbers into clean badge strings like 48.9k+."""
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M+"
+    elif n >= 1_000:
+        return f"{n / 1_000:.1f}k+"
+    return str(n)
+
+
 def generate_all_badges(summary: ScanSummary, output_dir: str = "badges"):
     """Generate and save SVG badges based on scan summary."""
     out_path = Path(output_dir)
@@ -63,3 +72,27 @@ def generate_all_badges(summary: ScanSummary, output_dir: str = "badges"):
     ai_repos_val = f"{summary.ai_assisted_repos_count} / {summary.total_repos_scanned}"
     svg_assisted = render_svg_badge("AI-Assisted Repos", ai_repos_val, "#1f2428", "#0284c7")
     (out_path / "ai_assisted.svg").write_text(svg_assisted, encoding="utf-8")
+
+    # 5. Global Public Ecosystem Badges
+    eco = summary.ecosystem_counts
+    if eco:
+        claude_count = eco.get("Claude Code", 0)
+        agents_count = eco.get("Autonomous AI Agents", 0)
+        mcp_count = eco.get("Model Context Protocol (MCP)", 0)
+        langgraph_count = eco.get("LangGraph Workflows", 0)
+
+        if claude_count > 0:
+            svg_c = render_svg_badge("Claude Code Projects", format_compact_number(claude_count), "#1f2428", "#d97706")
+            (out_path / "global_claude.svg").write_text(svg_c, encoding="utf-8")
+
+        if agents_count > 0:
+            svg_a = render_svg_badge("Public AI Agents", format_compact_number(agents_count), "#1f2428", "#8250df")
+            (out_path / "global_agents.svg").write_text(svg_a, encoding="utf-8")
+
+        if mcp_count > 0:
+            svg_m = render_svg_badge("MCP Servers", format_compact_number(mcp_count), "#1f2428", "#2ea44f")
+            (out_path / "global_mcp.svg").write_text(svg_m, encoding="utf-8")
+
+        if langgraph_count > 0:
+            svg_l = render_svg_badge("LangGraph Repos", format_compact_number(langgraph_count), "#1f2428", "#0969da")
+            (out_path / "global_langgraph.svg").write_text(svg_l, encoding="utf-8")

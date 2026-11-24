@@ -1,14 +1,15 @@
 # 🛰️ Git AI Tracer
 
 [![CI Tests](https://github.com/jmreddy2106/git_ai_tracer/actions/workflows/tracer_cron.yml/badge.svg)](https://github.com/jmreddy2106/git_ai_tracer/actions)
-[![AI Adoption](badges/adoption_rate.svg)](AI_METRICS.md)
-[![AI Agents](badges/agent_status.svg)](AI_METRICS.md)
-[![Top AI Tool](badges/ai_tools.svg)](AI_METRICS.md)
+[![Public AI Agents](badges/global_agents.svg)](AI_METRICS.md)
+[![Claude Code Projects](badges/global_claude.svg)](AI_METRICS.md)
+[![MCP Servers](badges/global_mcp.svg)](AI_METRICS.md)
+[![LangGraph Repos](badges/global_langgraph.svg)](AI_METRICS.md)
 
-**Git AI Tracer** is an automated scanning, classification, and analytics engine that detects and tracks:
-1. **AI Coding Tool Footprints**: Identifies repositories built with or assisted by tools like **Claude Code**, **Cursor**, **Windsurf**, **Aider**, **Cline / Roo Code**, **GitHub Copilot**, **Devin**, **Continue.dev**, and **v0 / Bolt**.
-2. **AI Agent Architectures**: Detects repositories built *for* AI agents using multi-agent systems (**CrewAI**, **AutoGen**, **Swarm**), workflow graphs (**LangGraph**, **LlamaIndex**), and protocol standards (**Model Context Protocol / MCP**, **ElizaOS**).
-3. **Live Sync & Profile Tracking**: Runs automatically on a daily schedule via GitHub Actions, scanning your public repositories, updating metrics, generating dynamic SVG badges, and deploying an interactive dashboard to **GitHub Pages**.
+**Git AI Tracer** is an automated scanning, classification, and census engine that tracks the **global public GitHub ecosystem**:
+1. **Public AI Coding Tool Adoption**: Censuses and tracks projects built with or assisted by **Claude Code** (128k+ repos), **Cursor**, **Aider**, **Cline / Roo Code**, **GitHub Copilot**, and **v0 / Bolt**.
+2. **Public AI Agent Ecosystem**: Censuses repositories built *for* AI agents using multi-agent systems (**CrewAI**, **AutoGen**), workflow graphs (**LangGraph**), and protocol standards (**Model Context Protocol / MCP**, **ElizaOS**).
+3. **Live Sync & Profile Tracking**: Runs automatically on a daily schedule via GitHub Actions, scanning public repositories across GitHub, updating metrics, generating dynamic SVG badges, and deploying an interactive dashboard to **GitHub Pages**.
 
 ---
 
@@ -109,10 +110,11 @@ git push -u origin main
 Add this snippet to your personal profile `README.md` (`https://github.com/jmreddy2106/jmreddy2106/blob/main/README.md`):
 
 ```markdown
-### 🤖 My AI & LLM Usage Footprint
-[![AI Adoption](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/adoption_rate.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
-[![AI Agents](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/agent_status.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
-[![Top AI Tool](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/ai_tools.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
+### 🌐 Global AI & LLM Ecosystem Tracker
+[![Public AI Agents](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/global_agents.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
+[![Claude Code Projects](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/global_claude.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
+[![MCP Servers](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/global_mcp.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
+[![LangGraph Repos](https://raw.githubusercontent.com/jmreddy2106/git_ai_tracer/main/badges/global_langgraph.svg)](https://jmreddy2106.github.io/git_ai_tracer/)
 ```
 
 ---

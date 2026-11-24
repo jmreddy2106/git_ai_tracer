@@ -6,14 +6,18 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
+      scan_mode:
+        description: 'Scan mode: "ecosystem" (all public GitHub repos) or "user" (specific profile)'
+        required: true
+        default: 'ecosystem'
       target_user:
-        description: 'GitHub username to scan (leave empty for repository owner)'
+        description: 'GitHub username to scan (only used if scan_mode is user)'
         required: false
         default: ''
-      max_repos:
-        description: 'Max repositories to scan'
+      repos_per_topic:
+        description: 'Sample repos per topic to index (ecosystem mode)'
         required: false
-        default: '100'
+        default: '8'
   push:
     branches:
       - main
@@ -56,17 +60,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TARGET_USER="${{ github.event.inputs.target_user }}"
-          if [ -z "$TARGET_USER" ]; then
-            TARGET_USER="${{ github.repository_owner }}"
-          fi
-          MAX_REPOS="${{ github.event.inputs.max_repos }}"
-          if [ -z "$MAX_REPOS" ]; then
-            MAX_REPOS="100"
+          SCAN_MODE="${{ github.event.inputs.scan_mode }}"
+          if [ -z "$SCAN_MODE" ]; then
+            SCAN_MODE="ecosystem"
           fi
           
-          echo "Scanning GitHub user: $TARGET_USER (Limit: $MAX_REPOS)"
-          git-ai-tracer scan --user "$TARGET_USER" --limit "$MAX_REPOS"
+          if [ "$SCAN_MODE" = "user" ]; then
+            TARGET_USER="${{ github.event.inputs.target_user }}"
+            if [ -z "$TARGET_USER" ]; then
+              TARGET_USER="${{ github.repository_owner }}"
+            fi
+            echo "Scanning public repositories for user: $TARGET_USER"
+            git-ai-tracer scan --user "$TARGET_USER"
+          else
+            REPOS_PER_TOPIC="${{ github.event.inputs.repos_per_topic }}"
+            if [ -z "$REPOS_PER_TOPIC" ]; then
+              REPOS_PER_TOPIC="8"
+            fi
+            echo "Scanning global public GitHub ecosystem (Repos per topic: $REPOS_PER_TOPIC)..."
+            git-ai-tracer track-ecosystem --repos-per-topic "$REPOS_PER_TOPIC"
+          fi
 
       - name: Commit and Push Updated Metrics
         run: |

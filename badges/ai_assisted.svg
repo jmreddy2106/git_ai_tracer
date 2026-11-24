@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="189" height="20" role="img" aria-label="AI-Assisted Repos: 2 / 45">
+<svg xmlns="http://www.w3.org/2000/svg" width="196" height="20" role="img" aria-label="AI-Assisted Repos: 22 / 32">
   <linearGradient id="s" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
   <clipPath id="r">
-    <rect width="189" height="20" rx="3" fill="#fff"/>
+    <rect width="196" height="20" rx="3" fill="#fff"/>
   </clipPath>
   <g clip-path="url(#r)">
     <rect width="133" height="20" fill="#1f2428"/>
-    <rect x="133" width="56" height="20" fill="#0284c7"/>
-    <rect width="189" height="20" fill="url(#s)"/>
+    <rect x="133" width="63" height="20" fill="#0284c7"/>
+    <rect width="196" height="20" fill="url(#s)"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
     <text aria-hidden="true" x="665.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1190">AI-Assisted Repos</text>
     <text x="665.0" y="140" transform="scale(.1)" fill="#fff" textLength="1190">AI-Assisted Repos</text>
-    <text aria-hidden="true" x="1610.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="420">2 / 45</text>
-    <text x="1610.0" y="140" transform="scale(.1)" fill="#fff" textLength="420">2 / 45</text>
+    <text aria-hidden="true" x="1645.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="490">22 / 32</text>
+    <text x="1645.0" y="140" transform="scale(.1)" fill="#fff" textLength="490">22 / 32</text>
   </g>
 </svg>

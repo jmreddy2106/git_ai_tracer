@@ -13,6 +13,21 @@ from git_ai_tracer.scanner.cache import ScanCache
 console = Console()
 
 
+ECOSYSTEM_TOPICS = [
+    ("Claude Code", "topic:claude-code"),
+    ("Cursor Rules", "topic:cursor-rules"),
+    ("Aider", "topic:aider"),
+    ("Cline / Roo Code", "topic:cline"),
+    ("GitHub Copilot", "topic:copilot"),
+    ("Autonomous AI Agents", "topic:ai-agent"),
+    ("Model Context Protocol (MCP)", "topic:mcp-server"),
+    ("LangGraph Workflows", "topic:langgraph"),
+    ("CrewAI Teams", "topic:crewai"),
+    ("AutoGen", "topic:autogen"),
+    ("ElizaOS", "topic:elizaos"),
+]
+
+
 class GitHubClient:
     BASE_URL = "https://api.github.com"
 
@@ -59,6 +74,23 @@ class GitHubClient:
                 page += 1
 
         return repos[:limit]
+
+    async def query_public_topic_stats(self, client: httpx.AsyncClient, query: str, limit: int = 10) -> tuple[int, List[dict]]:
+        """Query GitHub search to get total count across all of GitHub plus top sample repos."""
+        url = f"{self.BASE_URL}/search/repositories"
+        params = {
+            "q": query,
+            "sort": "stars",
+            "order": "desc",
+            "per_page": min(limit, 100),
+        }
+        resp = await client.get(url, params=params)
+        if resp.status_code != 200:
+            return 0, []
+        data = resp.json()
+        total_count = data.get("total_count", 0)
+        items = data.get("items", [])[:limit]
+        return total_count, items
 
     async def search_repositories(self, query: str, limit: int = 50) -> List[dict]:
         """Search public repositories across GitHub by query or topic."""
@@ -209,7 +241,48 @@ class GitHubClient:
 
         return self._build_summary("ecosystem", query, analyses)
 
-    def _build_summary(self, target_type: str, identifier: str, analyses: List[RepositoryAnalysis]) -> ScanSummary:
+    async def scan_ecosystem(self, repos_per_topic: int = 10) -> ScanSummary:
+        """Scan and census public repositories across GitHub for AI tools and agent frameworks."""
+        ecosystem_counts: Dict[str, int] = {}
+        unique_repos: Dict[str, dict] = {}
+
+        async with httpx.AsyncClient(headers=self.headers, timeout=25.0) as client:
+            for label, query in ECOSYSTEM_TOPICS:
+                try:
+                    total_count, items = await self.query_public_topic_stats(client, query, limit=repos_per_topic)
+                    ecosystem_counts[label] = total_count
+                    for repo in items:
+                        fn = repo.get("full_name")
+                        if fn and fn not in unique_repos:
+                            unique_repos[fn] = repo
+                except Exception as e:
+                    console.print(f"[yellow]Warning: query failed for '{query}': {e}[/yellow]")
+
+        analyses: List[RepositoryAnalysis] = []
+        for repo in unique_repos.values():
+            try:
+                analysis = await self.analyze_repo(repo)
+                analyses.append(analysis)
+            except Exception as e:
+                console.print(f"[yellow]Skipping {repo.get('full_name')}: {e}[/yellow]")
+
+        # Sort analyzed repos by stars descending
+        analyses.sort(key=lambda r: r.stars, reverse=True)
+
+        return self._build_summary(
+            target_type="ecosystem",
+            identifier="Global Public GitHub",
+            analyses=analyses,
+            ecosystem_counts=ecosystem_counts,
+        )
+
+    def _build_summary(
+        self,
+        target_type: str,
+        identifier: str,
+        analyses: List[RepositoryAnalysis],
+        ecosystem_counts: Optional[Dict[str, int]] = None,
+    ) -> ScanSummary:
         total = len(analyses)
         ai_assisted = 0
         agent_projects = 0
@@ -240,6 +313,7 @@ class GitHubClient:
             ai_assisted_repos_count=ai_assisted,
             agent_repos_count=agent_projects,
             ai_adoption_rate=adoption_rate,
+            ecosystem_counts=ecosystem_counts or {},
             tool_counts=tool_counts,
             framework_counts=framework_counts,
             agent_category_counts=category_counts,

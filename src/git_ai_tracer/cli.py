@@ -50,11 +50,19 @@ def _save_and_generate_artifacts(summary: ScanSummary, json_path: str = "data/me
 
 def _display_summary_table(summary: ScanSummary):
     """Render a clean summary table in the terminal."""
-    table = Table(title=f"🛰️ AI Tracer Scan Results — {summary.target_identifier}", show_header=True)
+    if summary.ecosystem_counts:
+        eco_table = Table(title="🌐 Global GitHub Public Repository Census", show_header=True)
+        eco_table.add_column("Category / Technology", style="cyan")
+        eco_table.add_column("Total Public Repos on GitHub", style="bold green")
+        for k, v in sorted(summary.ecosystem_counts.items(), key=lambda x: x[1], reverse=True):
+            eco_table.add_row(k, f"{v:,}")
+        console.print(eco_table)
+
+    table = Table(title=f"🛰️ AI Tracer Indexed Repositories — {summary.target_identifier}", show_header=True)
     table.add_column("Metric", style="cyan", no_wrap=True)
     table.add_column("Value", style="bold magenta")
 
-    table.add_row("Total Scanned Repos", str(summary.total_repos_scanned))
+    table.add_row("Tracked Public Repositories", str(summary.total_repos_scanned))
     table.add_row("AI-Tool Assisted Repos", f"{summary.ai_assisted_repos_count} ({summary.ai_adoption_rate}%)")
     table.add_row("AI Agent Repos", str(summary.agent_repos_count))
 
@@ -113,6 +121,31 @@ def search(
             summary = asyncio.run(client.scan_search(query, limit=limit))
         except Exception as e:
             console.print(f"[bold red]Search failed:[/bold red] {e}")
+            raise typer.Exit(code=1)
+
+    _display_summary_table(summary)
+
+    if generate:
+        _save_and_generate_artifacts(summary, json_path=output)
+
+
+@app.command(name="track-ecosystem")
+def track_ecosystem(
+    repos_per_topic: int = typer.Option(8, "--repos-per-topic", "-r", help="Number of public sample repos to deeply inspect per topic"),
+    token: Optional[str] = typer.Option(None, "--token", "-t", help="GitHub Personal Access Token"),
+    output: str = typer.Option("data/metrics.json", "--output", "-o", help="Path to save output JSON metrics"),
+    generate: bool = typer.Option(True, "--generate/--no-generate", help="Generate badges, markdown report, and web dashboard"),
+):
+    """Scan and census publicly available repositories across all of GitHub for AI tools and AI agents."""
+    console.print(Panel("Scanning global public GitHub ecosystem for AI tools & Agent frameworks...", title="Git AI Tracer Global Ecosystem Tracker"))
+
+    client = GitHubClient(token=token)
+
+    with console.status("[bold green]Conducting global public GitHub census and inspecting top projects..."):
+        try:
+            summary = asyncio.run(client.scan_ecosystem(repos_per_topic=repos_per_topic))
+        except Exception as e:
+            console.print(f"[bold red]Ecosystem scan failed:[/bold red] {e}")
             raise typer.Exit(code=1)
 
     _display_summary_table(summary)

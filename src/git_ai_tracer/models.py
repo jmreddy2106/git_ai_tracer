@@ -76,13 +76,16 @@ class RepositoryAnalysis(BaseModel):
 
 
 class ScanSummary(BaseModel):
-    target_type: str = "user"  # "user" or "ecosystem"
-    target_identifier: str = ""
+    target_type: str = "ecosystem"  # "ecosystem" or "user"
+    target_identifier: str = "Public GitHub Ecosystem"
     scan_timestamp: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     total_repos_scanned: int = 0
     ai_assisted_repos_count: int = 0
     agent_repos_count: int = 0
     ai_adoption_rate: float = 0.0  # percentage
+    
+    # Global GitHub Public Repository Census Counts
+    ecosystem_counts: Dict[str, int] = Field(default_factory=dict)
     
     tool_counts: Dict[str, int] = Field(default_factory=dict)
     framework_counts: Dict[str, int] = Field(default_factory=dict)
