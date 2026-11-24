@@ -1,7 +1,7 @@
 {
   "target_type": "user",
   "target_identifier": "jmreddy2106",
-  "scan_timestamp": "2026-11-23T10:07:17.366968+00:00",
+  "scan_timestamp": "2026-11-24T08:42:25.473414+00:00",
   "total_repos_scanned": 45,
   "ai_assisted_repos_count": 2,
   "agent_repos_count": 2,
@@ -27,7 +27,7 @@
       "primary_language": "Python",
       "topics": [],
       "created_at": "2026-11-23T10:00:14Z",
-      "pushed_at": "2026-11-23T10:06:24Z",
+      "pushed_at": "2026-11-23T10:07:18Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -46,7 +46,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-23T10:06:41.743672+00:00"
+      "scan_timestamp": "2026-11-24T08:41:51.692324+00:00"
     },
     {
       "name": "OpenCluely",
@@ -83,7 +83,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:42.603329+00:00"
+      "scan_timestamp": "2026-11-24T08:41:52.695119+00:00"
     },
     {
       "name": "Workspace-Intelligence-Agent",
@@ -128,7 +128,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-23T10:06:44.207040+00:00"
+      "scan_timestamp": "2026-11-24T08:41:54.430139+00:00"
     },
     {
       "name": "gendeptrace_benchmark",
@@ -151,7 +151,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:44.998873+00:00"
+      "scan_timestamp": "2026-11-24T08:41:55.121749+00:00"
     },
     {
       "name": "jmreddy2106",
@@ -177,7 +177,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:45.705025+00:00"
+      "scan_timestamp": "2026-11-24T08:41:55.717523+00:00"
     },
     {
       "name": "crypto-algorithms-demo",
@@ -200,7 +200,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:46.747286+00:00"
+      "scan_timestamp": "2026-11-24T08:41:56.612403+00:00"
     },
     {
       "name": "GitSecure",
@@ -273,7 +273,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:47.584124+00:00"
+      "scan_timestamp": "2026-11-24T08:41:57.370823+00:00"
     },
     {
       "name": "aws-cli-localstack-dcoker",
@@ -296,7 +296,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:48.152601+00:00"
+      "scan_timestamp": "2026-11-24T08:41:57.925632+00:00"
     },
     {
       "name": "DermScan-AI",
@@ -319,7 +319,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:48.852490+00:00"
+      "scan_timestamp": "2026-11-24T08:41:58.622009+00:00"
     },
     {
       "name": "hackfest-2026",
@@ -342,7 +342,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:49.837135+00:00"
+      "scan_timestamp": "2026-11-24T08:41:59.559730+00:00"
     },
     {
       "name": "docuvoice",
@@ -365,7 +365,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:50.725073+00:00"
+      "scan_timestamp": "2026-11-24T08:42:00.364557+00:00"
     },
     {
       "name": "proj1",
@@ -388,7 +388,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:51.502637+00:00"
+      "scan_timestamp": "2026-11-24T08:42:01.185948+00:00"
     },
     {
       "name": "design-and-analysis-of-algorithms-notes",
@@ -411,7 +411,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:52.224805+00:00"
+      "scan_timestamp": "2026-11-24T08:42:01.852288+00:00"
     },
     {
       "name": "structure-aware-document-retrieval",
@@ -434,7 +434,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:53.014281+00:00"
+      "scan_timestamp": "2026-11-24T08:42:02.667354+00:00"
     },
     {
       "name": "Introduction-to-Data-Science-textbook",
@@ -457,7 +457,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:53.871389+00:00"
+      "scan_timestamp": "2026-11-24T08:42:03.528680+00:00"
     },
     {
       "name": "spark-structured-streaming-pipeline",
@@ -480,7 +480,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:54.901992+00:00"
+      "scan_timestamp": "2026-11-24T08:42:04.534164+00:00"
     },
     {
       "name": "automated-debugger-demo",
@@ -503,7 +503,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:55.673185+00:00"
+      "scan_timestamp": "2026-11-24T08:42:05.204046+00:00"
     },
     {
       "name": "dbms-fall-2025",
@@ -526,7 +526,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:56.291427+00:00"
+      "scan_timestamp": "2026-11-24T08:42:05.712316+00:00"
     },
     {
       "name": "Assignment-1-CSVReaderPreview",
@@ -549,7 +549,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:56.862796+00:00"
+      "scan_timestamp": "2026-11-24T08:42:06.294871+00:00"
     },
     {
       "name": "ml-flask-app",
@@ -572,7 +572,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:57.781414+00:00"
+      "scan_timestamp": "2026-11-24T08:42:07.151684+00:00"
     },
     {
       "name": "ge-smm-aq",
@@ -595,7 +595,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:58.450886+00:00"
+      "scan_timestamp": "2026-11-24T08:42:07.883639+00:00"
     },
     {
       "name": "edify",
@@ -618,7 +618,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:06:59.703031+00:00"
+      "scan_timestamp": "2026-11-24T08:42:09.174857+00:00"
     },
     {
       "name": "Secure-SSCS-SBOM",
@@ -641,7 +641,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:00.530978+00:00"
+      "scan_timestamp": "2026-11-24T08:42:10.061450+00:00"
     },
     {
       "name": "AirFlow-AWS-Cli-localstack-docker",
@@ -664,7 +664,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:01.375372+00:00"
+      "scan_timestamp": "2026-11-24T08:42:10.843362+00:00"
     },
     {
       "name": "GraphBOM",
@@ -687,7 +687,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:02.533013+00:00"
+      "scan_timestamp": "2026-11-24T08:42:12.076684+00:00"
     },
     {
       "name": "Kafka-PySpark-Streaming-Analytics-YouTube",
@@ -710,7 +710,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:03.412108+00:00"
+      "scan_timestamp": "2026-11-24T08:42:12.908360+00:00"
     },
     {
       "name": "AWS",
@@ -733,7 +733,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:04.105932+00:00"
+      "scan_timestamp": "2026-11-24T08:42:13.475361+00:00"
     },
     {
       "name": "Terraform-aws-localstack",
@@ -756,7 +756,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:04.749647+00:00"
+      "scan_timestamp": "2026-11-24T08:42:14.052011+00:00"
     },
     {
       "name": "React-Flask-Python-WebApp",
@@ -779,7 +779,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:05.736863+00:00"
+      "scan_timestamp": "2026-11-24T08:42:14.921574+00:00"
     },
     {
       "name": "Attention_Deficit_Hyperactivity_Disorder-ADHD",
@@ -802,7 +802,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:06.554107+00:00"
+      "scan_timestamp": "2026-11-24T08:42:15.651492+00:00"
     },
     {
       "name": "ASL-Signs-Predictions",
@@ -825,7 +825,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:07.200141+00:00"
+      "scan_timestamp": "2026-11-24T08:42:16.267045+00:00"
     },
     {
       "name": "Youtube",
@@ -848,7 +848,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:07.915137+00:00"
+      "scan_timestamp": "2026-11-24T08:42:16.833106+00:00"
     },
     {
       "name": "Text-Summarization-with-Flask",
@@ -871,7 +871,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:08.643184+00:00"
+      "scan_timestamp": "2026-11-24T08:42:17.510921+00:00"
     },
     {
       "name": "Welfare-Schemes-DMQL",
@@ -894,7 +894,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:09.394987+00:00"
+      "scan_timestamp": "2026-11-24T08:42:18.306029+00:00"
     },
     {
       "name": "WebDesignusingBootstrap",
@@ -917,7 +917,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:10.418208+00:00"
+      "scan_timestamp": "2026-11-24T08:42:19.026555+00:00"
     },
     {
       "name": "webdev-using-react-",
@@ -940,7 +940,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:11.170235+00:00"
+      "scan_timestamp": "2026-11-24T08:42:19.798689+00:00"
     },
     {
       "name": "Telugu-Handwritten-Digit-Recognition",
@@ -963,7 +963,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:11.830941+00:00"
+      "scan_timestamp": "2026-11-24T08:42:20.373226+00:00"
     },
     {
       "name": "Software-Bug-Prediction",
@@ -986,7 +986,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:12.662983+00:00"
+      "scan_timestamp": "2026-11-24T08:42:21.203337+00:00"
     },
     {
       "name": "Pattern-Mining-Intensive-Care-Unit",
@@ -1009,7 +1009,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:13.308484+00:00"
+      "scan_timestamp": "2026-11-24T08:42:21.812348+00:00"
     },
     {
       "name": "KafkaPySpark",
@@ -1032,7 +1032,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:14.071546+00:00"
+      "scan_timestamp": "2026-11-24T08:42:22.631792+00:00"
     },
     {
       "name": "Horticulture_Tableau_SmartInternz",
@@ -1055,7 +1055,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:14.820282+00:00"
+      "scan_timestamp": "2026-11-24T08:42:23.169883+00:00"
     },
     {
       "name": "idpt_source",
@@ -1078,7 +1078,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:15.541094+00:00"
+      "scan_timestamp": "2026-11-24T08:42:23.766682+00:00"
     },
     {
       "name": "DMQL-Homework-Latex-Tempalte-University-at-Buffalo",
@@ -1101,7 +1101,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:16.167324+00:00"
+      "scan_timestamp": "2026-11-24T08:42:24.360760+00:00"
     },
     {
       "name": "BigDataSpark",
@@ -1124,7 +1124,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:16.752957+00:00"
+      "scan_timestamp": "2026-11-24T08:42:24.914428+00:00"
     },
     {
       "name": "amzon-reviews",
@@ -1147,7 +1147,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-23T10:07:17.365667+00:00"
+      "scan_timestamp": "2026-11-24T08:42:25.471804+00:00"
     }
   ]
 }
