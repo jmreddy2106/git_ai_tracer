@@ -247,10 +247,13 @@ def generate_dashboard_html(summary: ScanSummary, output_path: str = "docs/index
           <div class="subtitle">Live tracking of AI Coding Tools & AI Agent Architectures across GitHub</div>
         </div>
       </div>
-      <div>
+      <div style="text-align: right;">
         <a href="https://github.com/{summary.target_identifier or ''}" target="_blank" class="repo-link">
           Target: @{summary.target_identifier or 'ecosystem'}
         </a>
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem;">
+          🕒 Last scanned: <strong>{summary.scan_timestamp[:16].replace('T', ' ')} UTC</strong>
+        </div>
       </div>
     </header>
 
