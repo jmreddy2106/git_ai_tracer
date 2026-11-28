@@ -1,27 +1,27 @@
 {
   "target_type": "ecosystem",
   "target_identifier": "Global Public GitHub",
-  "scan_timestamp": "2026-11-27T07:00:39.433682+00:00",
+  "scan_timestamp": "2026-11-28T06:36:07.099054+00:00",
   "total_repos_scanned": 80,
   "ai_assisted_repos_count": 54,
   "agent_repos_count": 70,
   "ai_adoption_rate": 67.5,
   "ecosystem_counts": {
-    "Claude Code": 131089,
-    "Cursor Rules": 753,
-    "Aider": 598,
-    "Cline / Roo Code": 1089,
-    "GitHub Copilot": 5211,
-    "Autonomous AI Agents": 50290,
-    "Model Context Protocol (MCP)": 48063,
-    "LangGraph Workflows": 19868,
-    "CrewAI Teams": 2868,
-    "AutoGen": 908,
-    "ElizaOS": 193
+    "Claude Code": 132106,
+    "Cursor Rules": 756,
+    "Aider": 601,
+    "Cline / Roo Code": 1096,
+    "GitHub Copilot": 5227,
+    "Autonomous AI Agents": 50559,
+    "Model Context Protocol (MCP)": 48483,
+    "LangGraph Workflows": 19958,
+    "CrewAI Teams": 2877,
+    "AutoGen": 911,
+    "ElizaOS": 194
   },
   "tool_counts": {
-    "Claude Code": 40,
-    "Cursor": 7,
+    "Cursor": 8,
+    "Claude Code": 39,
     "GitHub Copilot": 16,
     "v0 / Bolt / Lovable": 21,
     "Cline / Roo Code": 4,
@@ -51,8 +51,8 @@
       "html_url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "default_branch": "main",
-      "stars": 480159,
-      "forks": 116678,
+      "stars": 481378,
+      "forks": 116893,
       "primary_language": "TypeScript",
       "topics": [
         "agent-skills",
@@ -77,9 +77,29 @@
         "typescript"
       ],
       "created_at": "2026-04-14T00:51:32Z",
-      "pushed_at": "2026-11-27T05:42:50Z",
+      "pushed_at": "2026-11-28T05:28:56Z",
       "is_ai_powered": true,
-      "detected_tools": [],
+      "detected_tools": [
+        {
+          "tool_name": "Cursor",
+          "category": "coding_assistant",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "type": "commit",
+              "match": "fix(ghidra): refuse over-deep caller types before Ghidra parses them (#14930)",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Cursor"
+            },
+            {
+              "type": "commit",
+              "match": "feat(apple): inspect Image4 (IMG4, IM4P, IM4M) firmware containers offline (#149",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Cursor"
+            }
+          ]
+        }
+      ],
       "agent_detection": {
         "is_agent_project": true,
         "confidence": 0.95,
@@ -245,6 +265,12 @@
           {
             "type": "config",
             "match": "tests/boundary/mcp/androidDescriptorAdmissionMcp.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "tests/boundary/mcp/androidDtboMcp.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
           },
@@ -574,6 +600,12 @@
           },
           {
             "type": "config",
+            "match": "tests/boundary/mcp/closeBinaryCheckpointDiscardMcp.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "tests/boundary/mcp/commandObservationViews.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -862,6 +894,12 @@
           },
           {
             "type": "config",
+            "match": "tests/boundary/mcp/espNvsMcpCli.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "tests/boundary/mcp/evidenceAtomicRetentionRecovery.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -952,6 +990,12 @@
           },
           {
             "type": "config",
+            "match": "tests/boundary/mcp/firmwareVectorTableMcpCli.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "tests/boundary/mcp/fitImageMcp.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -965,6 +1009,12 @@
           {
             "type": "config",
             "match": "tests/boundary/mcp/flutterMcp.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "tests/boundary/mcp/formatRecordHeaderPagesMcp.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
           },
@@ -1151,6 +1201,12 @@
           {
             "type": "config",
             "match": "tests/boundary/mcp/ghidraStartupCancellationMcp.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "tests/boundary/mcp/ghidraTypeEditsMcp.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
           },
@@ -1372,6 +1428,12 @@
           },
           {
             "type": "config",
+            "match": "tests/boundary/mcp/labviewArtifactMcp.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "tests/boundary/mcp/largeBytePattern.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -1391,6 +1453,12 @@
           {
             "type": "config",
             "match": "tests/boundary/mcp/liveBinaryTargetSummary.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "tests/boundary/mcp/machoFunctionStartsMcp.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
           },
@@ -2392,6 +2460,12 @@
           },
           {
             "type": "config",
+            "match": "tests/boundary/mcp/yaraMatchesMcp.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "tests/support/mcp/addressContextCapacity.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -2440,7 +2514,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:12.052190+00:00"
+      "scan_timestamp": "2026-11-28T06:34:20.981009+00:00"
     },
     {
       "name": "ECC",
@@ -2448,8 +2522,8 @@
       "html_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "default_branch": "main",
-      "stars": 311424,
-      "forks": 45752,
+      "stars": 311999,
+      "forks": 45836,
       "primary_language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -3265,7 +3339,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:13.525753+00:00"
+      "scan_timestamp": "2026-11-28T06:34:23.016081+00:00"
     },
     {
       "name": "hermes-agent",
@@ -3273,8 +3347,8 @@
       "html_url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "default_branch": "main",
-      "stars": 266470,
-      "forks": 60457,
+      "stars": 266630,
+      "forks": 60527,
       "primary_language": "Python",
       "topics": [
         "ai",
@@ -3292,7 +3366,7 @@
         "openai"
       ],
       "created_at": "2025-07-22T22:22:28Z",
-      "pushed_at": "2026-11-27T06:51:59Z",
+      "pushed_at": "2026-11-28T06:15:27Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -4246,7 +4320,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:15.893054+00:00"
+      "scan_timestamp": "2026-11-28T06:34:25.770602+00:00"
     },
     {
       "name": "n8n",
@@ -4254,8 +4328,8 @@
       "html_url": "https://github.com/n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "default_branch": "master",
-      "stars": 212368,
-      "forks": 61685,
+      "stars": 212352,
+      "forks": 61688,
       "primary_language": "TypeScript",
       "topics": [
         "ai",
@@ -4280,7 +4354,7 @@
         "workflow-automation"
       ],
       "created_at": "2019-06-22T09:24:21Z",
-      "pushed_at": "2026-11-27T06:56:08Z",
+      "pushed_at": "2026-11-28T06:10:24Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -4566,7 +4640,7 @@
             },
             {
               "type": "config",
-              "match": ".claude/plugins/n8n/skills/ui-design",
+              "match": ".claude/plugins/n8n/skills/ui-review",
               "confidence": 0.98,
               "details": "Matched path pattern regex: ^\\.claude/"
             },
@@ -4668,13 +4742,19 @@
             },
             {
               "type": "commit",
-              "match": "fix(core): Charge a field that does not go across what its walk used (no-changel",
+              "match": "feat(core, editor): Connect AI clients to custom MCP servers with the n8n sign-i",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "feat(core): Run agent draft tests against a simulation (no-changelog) (#43742)",
+              "match": "ci(benchmark): Add benchmark setups with the execution ledger on (no-changelog) ",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "feat(core): Bind a test chat world to its owner and the draft's MCP connections ",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
@@ -4691,6 +4771,12 @@
           "Model Context Protocol (MCP)"
         ],
         "evidence": [
+          {
+            "type": "config",
+            "match": "packages/@n8n/agents/src/runtime/mcp/http-error.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
           {
             "type": "config",
             "match": "packages/@n8n/agents/src/runtime/mcp/mcp-connection.ts",
@@ -7243,7 +7329,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:59.205477+00:00"
+      "scan_timestamp": "2026-11-28T06:35:20.385560+00:00"
     },
     {
       "name": "ponytail",
@@ -7251,8 +7337,8 @@
       "html_url": "https://github.com/DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "default_branch": "main",
-      "stars": 199520,
-      "forks": 11333,
+      "stars": 200269,
+      "forks": 11392,
       "primary_language": "JavaScript",
       "topics": [
         "agent-skills",
@@ -7388,7 +7474,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:16.667474+00:00"
+      "scan_timestamp": "2026-11-28T06:34:26.765914+00:00"
     },
     {
       "name": "markitdown",
@@ -7396,8 +7482,8 @@
       "html_url": "https://github.com/microsoft/markitdown",
       "description": "Python tool for converting files and office documents to Markdown.",
       "default_branch": "main",
-      "stars": 198650,
-      "forks": 15085,
+      "stars": 198788,
+      "forks": 15105,
       "primary_language": "Python",
       "topics": [
         "autogen",
@@ -7430,7 +7516,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:27.780193+00:00"
+      "scan_timestamp": "2026-11-28T06:35:54.464373+00:00"
     },
     {
       "name": "cc-switch",
@@ -7438,8 +7524,8 @@
       "html_url": "https://github.com/farion1231/cc-switch",
       "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
       "default_branch": "main",
-      "stars": 157520,
-      "forks": 10289,
+      "stars": 157705,
+      "forks": 10308,
       "primary_language": "Rust",
       "topics": [
         "ai-tools",
@@ -7463,7 +7549,7 @@
         "wsl-support"
       ],
       "created_at": "2025-08-04T14:16:16Z",
-      "pushed_at": "2026-11-27T04:10:05Z",
+      "pushed_at": "2026-11-27T15:31:11Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -7476,6 +7562,24 @@
               "match": "src-tauri/tests/integration/golden/snapshots/mcp/claude.json",
               "confidence": 0.98,
               "details": "Matched configuration marker: claude.json"
+            },
+            {
+              "type": "commit",
+              "match": "feat(presets): add FastAIToken as a basic sponsor",
+              "confidence": 0.98,
+              "details": "Matched commit signature: \\bClaude Code\\b"
+            },
+            {
+              "type": "commit",
+              "match": "feat(claude-desktop): add the Command Code provider preset",
+              "confidence": 0.98,
+              "details": "Matched commit signature: \\bClaude Code\\b"
+            },
+            {
+              "type": "commit",
+              "match": "fix(tray): let the panel grow to the full canvas height before scrolling",
+              "confidence": 0.98,
+              "details": "Matched commit signature: \\bClaude Code\\b"
             }
           ]
         },
@@ -7831,7 +7935,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:17.507687+00:00"
+      "scan_timestamp": "2026-11-28T06:34:27.770215+00:00"
     },
     {
       "name": "ui-ux-pro-max-skill",
@@ -7839,8 +7943,8 @@
       "html_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "description": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
       "default_branch": "main",
-      "stars": 154750,
-      "forks": 16299,
+      "stars": 155265,
+      "forks": 16372,
       "primary_language": "Python",
       "topics": [
         "ai-skills",
@@ -7864,7 +7968,7 @@
         "windsurf-ai"
       ],
       "created_at": "2025-11-30T11:36:31Z",
-      "pushed_at": "2026-11-27T04:05:44Z",
+      "pushed_at": "2026-11-27T07:07:41Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -9836,6 +9940,12 @@
             },
             {
               "type": "commit",
+              "match": "docs: correct WCAG large-text and contrast claims in brand skills (#612)",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
               "match": "feat: add PySide6 / Qt (qfluentwidgets) stack (#600)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
@@ -9870,7 +9980,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:18.589934+00:00"
+      "scan_timestamp": "2026-11-28T06:34:29.284964+00:00"
     },
     {
       "name": "graphify",
@@ -9878,8 +9988,8 @@
       "html_url": "https://github.com/Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "default_branch": "v8",
-      "stars": 153952,
-      "forks": 14814,
+      "stars": 154340,
+      "forks": 14853,
       "primary_language": "Python",
       "topics": [
         "ai-agents",
@@ -9904,7 +10014,7 @@
         "tree-sitter"
       ],
       "created_at": "2026-04-03T15:49:07Z",
-      "pushed_at": "2026-11-27T02:53:36Z",
+      "pushed_at": "2026-11-28T04:04:49Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -9914,13 +10024,31 @@
           "evidence": [
             {
               "type": "commit",
-              "match": "chore(release): 0.9.121 — schema 57, ~27 community PRs",
+              "match": "test(liquid): loosen the 2MB-file timing budget (flaked on CI 3.14)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "chore(schema): fold Rust #5398 and COBOL #5424/#5425/#5426 into schema-57",
+              "match": "chore(release): 0.9.122 — schema 58, Shopify extractor + 16 community PRs",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "chore(schema): consolidate this release's extraction changes into schema 58",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(cpp): blank block comments inside #define directives before parsing",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "feat(extract): Shopify/Liquid theme extractor (#5553, #5554, #5555, #5557)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
@@ -9958,7 +10086,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:19.437931+00:00"
+      "scan_timestamp": "2026-11-28T06:34:30.380557+00:00"
     },
     {
       "name": "spec-kit",
@@ -9966,8 +10094,8 @@
       "html_url": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
       "default_branch": "main",
-      "stars": 151788,
-      "forks": 13640,
+      "stars": 152389,
+      "forks": 13687,
       "primary_language": "Python",
       "topics": [
         "ai",
@@ -10046,7 +10174,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:43.824206+00:00"
+      "scan_timestamp": "2026-11-28T06:34:59.594644+00:00"
     },
     {
       "name": "langchain",
@@ -10054,8 +10182,8 @@
       "html_url": "https://github.com/langchain-ai/langchain",
       "description": "The agent engineering platform.",
       "default_branch": "master",
-      "stars": 150056,
-      "forks": 25179,
+      "stars": 150092,
+      "forks": 25185,
       "primary_language": "Python",
       "topics": [
         "agents",
@@ -10080,23 +10208,9 @@
         "typescript"
       ],
       "created_at": "2022-10-17T02:58:36Z",
-      "pushed_at": "2026-11-26T10:36:59Z",
+      "pushed_at": "2026-11-28T02:14:10Z",
       "is_ai_powered": true,
-      "detected_tools": [
-        {
-          "tool_name": "Claude Code",
-          "category": "coding_assistant",
-          "confidence": 0.98,
-          "evidence": [
-            {
-              "type": "commit",
-              "match": "fix(core): reuse provider message id on later stream chunks (#42050)",
-              "confidence": 0.98,
-              "details": "Matched commit signature: \\bClaude Code\\b"
-            }
-          ]
-        }
-      ],
+      "detected_tools": [],
       "agent_detection": {
         "is_agent_project": true,
         "confidence": 0.95,
@@ -10315,7 +10429,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:07.841989+00:00"
+      "scan_timestamp": "2026-11-28T06:35:31.145372+00:00"
     },
     {
       "name": "system-prompts-and-models-of-ai-tools",
@@ -10323,8 +10437,8 @@
       "html_url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "default_branch": "main",
-      "stars": 144895,
-      "forks": 34623,
+      "stars": 144902,
+      "forks": 34621,
       "primary_language": null,
       "topics": [
         "ai",
@@ -10359,7 +10473,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:44.330549+00:00"
+      "scan_timestamp": "2026-11-28T06:35:00.214207+00:00"
     },
     {
       "name": "orca",
@@ -10367,8 +10481,8 @@
       "html_url": "https://github.com/stablyai/orca",
       "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
       "default_branch": "main",
-      "stars": 141090,
-      "forks": 9034,
+      "stars": 142841,
+      "forks": 9134,
       "primary_language": "TypeScript",
       "topics": [
         "agent-ide",
@@ -10393,7 +10507,7 @@
         "yc-backed"
       ],
       "created_at": "2026-03-17T03:28:57Z",
-      "pushed_at": "2026-11-27T06:55:49Z",
+      "pushed_at": "2026-11-28T06:34:05Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -10829,6 +10943,12 @@
           },
           {
             "type": "config",
+            "match": "mobile/src/session/native-chat/mcp/mobile-native-chat-mcp-status-mark.tsx",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "mobile/src/session/native-chat/mcp/use-mobile-structured-mcp-panel.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -10884,6 +11004,12 @@
           {
             "type": "config",
             "match": "src/renderer/src/components/native-chat/mcp/use-native-chat-mcp-tray.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "src/renderer/src/components/native-chat/mcp/use-orca-mcp-problems.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
           },
@@ -10991,7 +11117,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:22.031546+00:00"
+      "scan_timestamp": "2026-11-28T06:34:33.385824+00:00"
     },
     {
       "name": "Agent-Reach",
@@ -10999,8 +11125,8 @@
       "html_url": "https://github.com/Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "default_branch": "main",
-      "stars": 115150,
-      "forks": 10357,
+      "stars": 115434,
+      "forks": 10388,
       "primary_language": "Python",
       "topics": [
         "agent-infrastructure",
@@ -11079,7 +11205,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:49.671133+00:00"
+      "scan_timestamp": "2026-11-28T06:35:07.626538+00:00"
     },
     {
       "name": "gemini-cli",
@@ -11087,8 +11213,8 @@
       "html_url": "https://github.com/google-gemini/gemini-cli",
       "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "default_branch": "main",
-      "stars": 109216,
-      "forks": 15008,
+      "stars": 109257,
+      "forks": 15022,
       "primary_language": "TypeScript",
       "topics": [
         "ai",
@@ -11100,7 +11226,7 @@
         "mcp-server"
       ],
       "created_at": "2025-04-17T17:04:31Z",
-      "pushed_at": "2026-11-27T01:14:43Z",
+      "pushed_at": "2026-11-28T01:12:45Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -11350,7 +11476,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:00.462441+00:00"
+      "scan_timestamp": "2026-11-28T06:35:22.026692+00:00"
     },
     {
       "name": "Scrapling",
@@ -11358,8 +11484,8 @@
       "html_url": "https://github.com/D4Vinci/Scrapling",
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "default_branch": "main",
-      "stars": 106052,
-      "forks": 11126,
+      "stars": 106517,
+      "forks": 11179,
       "primary_language": "Python",
       "topics": [
         "ai",
@@ -11384,7 +11510,7 @@
         "xpath"
       ],
       "created_at": "2024-10-13T20:29:53Z",
-      "pushed_at": "2026-11-26T00:10:49Z",
+      "pushed_at": "2026-11-28T00:24:39Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -11405,7 +11531,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:01.380113+00:00"
+      "scan_timestamp": "2026-11-28T06:35:23.228797+00:00"
     },
     {
       "name": "worldmonitor",
@@ -11413,8 +11539,8 @@
       "html_url": "https://github.com/koala73/worldmonitor",
       "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "default_branch": "main",
-      "stars": 91242,
-      "forks": 14174,
+      "stars": 91277,
+      "forks": 14189,
       "primary_language": "TypeScript",
       "topics": [
         "agent",
@@ -11432,29 +11558,9 @@
         "situation"
       ],
       "created_at": "2026-01-08T17:26:06Z",
-      "pushed_at": "2026-11-27T06:58:37Z",
+      "pushed_at": "2026-11-28T05:35:00Z",
       "is_ai_powered": true,
-      "detected_tools": [
-        {
-          "tool_name": "Claude Code",
-          "category": "coding_assistant",
-          "confidence": 0.98,
-          "evidence": [
-            {
-              "type": "commit",
-              "match": "feat(climate): offer on-demand translation on Climate News cards (#10054) (#1108",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "fix(news): make headline translation a Pro feature (#11446)",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            }
-          ]
-        }
-      ],
+      "detected_tools": [],
       "agent_detection": {
         "is_agent_project": true,
         "confidence": 0.95,
@@ -12163,7 +12269,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:03.084146+00:00"
+      "scan_timestamp": "2026-11-28T06:35:25.151044+00:00"
     },
     {
       "name": "OmniRoute",
@@ -12171,8 +12277,8 @@
       "html_url": "https://github.com/cheaper-inference/OmniRoute",
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 900+ contributors",
       "default_branch": "release/v3.8.55",
-      "stars": 90611,
-      "forks": 14115,
+      "stars": 90810,
+      "forks": 14159,
       "primary_language": "TypeScript",
       "topics": [
         "a2a",
@@ -12197,7 +12303,7 @@
         "token-saver"
       ],
       "created_at": "2026-02-13T12:38:31Z",
-      "pushed_at": "2026-11-27T06:52:44Z",
+      "pushed_at": "2026-11-28T06:19:42Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -12819,7 +12925,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:36.517615+00:00"
+      "scan_timestamp": "2026-11-28T06:34:51.641853+00:00"
     },
     {
       "name": "deer-flow",
@@ -12827,8 +12933,8 @@
       "html_url": "https://github.com/bytedance/deer-flow",
       "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
       "default_branch": "main",
-      "stars": 85861,
-      "forks": 12127,
+      "stars": 85885,
+      "forks": 12133,
       "primary_language": "Python",
       "topics": [
         "agent",
@@ -12851,7 +12957,7 @@
         "typescript"
       ],
       "created_at": "2025-05-07T02:50:19Z",
-      "pushed_at": "2026-11-27T06:53:13Z",
+      "pushed_at": "2026-11-28T06:21:06Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -12876,12 +12982,6 @@
               "match": "frontend/CLAUDE.md",
               "confidence": 0.98,
               "details": "Matched configuration marker: CLAUDE.md"
-            },
-            {
-              "type": "commit",
-              "match": "feat(sandbox): structured run error and UI toast for sandbox capacity (#8697)",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
           ]
         },
@@ -13454,7 +13554,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:09.607297+00:00"
+      "scan_timestamp": "2026-11-28T06:35:33.214804+00:00"
     },
     {
       "name": "career-ops",
@@ -13462,8 +13562,8 @@
       "html_url": "https://github.com/career-ops-hq/career-ops",
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
       "default_branch": "main",
-      "stars": 85108,
-      "forks": 15575,
+      "stars": 85260,
+      "forks": 15598,
       "primary_language": "JavaScript",
       "topics": [
         "agent-skills",
@@ -13488,7 +13588,7 @@
         "resume"
       ],
       "created_at": "2026-04-04T18:21:18Z",
-      "pushed_at": "2026-11-27T05:51:57Z",
+      "pushed_at": "2026-11-28T05:52:09Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -13522,25 +13622,31 @@
             },
             {
               "type": "commit",
-              "match": "feat(providers): set Job.country from We Work Remotely's country flag (#7745)",
+              "match": "docs(modes): fix stale envelope keys, liveness pointer and fee-table rows (#7869",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "feat(google): opt-in full_board mode walks the whole unqueried results listing (",
+              "match": "fix(latex): fail the run when the PDF never reaches the output path (#7867)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "feat(providers): add talents-connect provider for Talents Connect JobShop career",
+              "match": "fix(web): send exit-1 server faults from core scripts to 500 (#7866)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "feat(dashboard,web): send --expect-status so a stale row selection cannot be wri",
+              "match": "perf(closing-soon): skip the tag scan when no '>' is within reach (#7865)",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(jd-capture): don't read a capture date's year as a report number (#7862)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
@@ -13625,7 +13731,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:50.554076+00:00"
+      "scan_timestamp": "2026-11-28T06:35:09.020493+00:00"
     },
     {
       "name": "OpenMontage",
@@ -13633,8 +13739,8 @@
       "html_url": "https://github.com/OpenMontageInc/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "default_branch": "main",
-      "stars": 83718,
-      "forks": 11416,
+      "stars": 83901,
+      "forks": 11449,
       "primary_language": "Python",
       "topics": [
         "agent",
@@ -16893,7 +16999,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:45.314888+00:00"
+      "scan_timestamp": "2026-11-28T06:35:01.540005+00:00"
     },
     {
       "name": "ruflo",
@@ -16901,8 +17007,8 @@
       "html_url": "https://github.com/ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "default_branch": "main",
-      "stars": 82515,
-      "forks": 9714,
+      "stars": 82569,
+      "forks": 9725,
       "primary_language": "TypeScript",
       "topics": [
         "agent-memory",
@@ -16927,7 +17033,7 @@
         "vector-search"
       ],
       "created_at": "2025-06-02T21:24:20Z",
-      "pushed_at": "2026-11-26T14:25:45Z",
+      "pushed_at": "2026-11-27T19:44:29Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -24089,19 +24195,7 @@
             },
             {
               "type": "commit",
-              "match": "dream(performance) (evaluated): memoize AttentionCoordinator's redundant per-hea",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "dream(security) (evaluated): enforce allowShell/allowNetwork/allowFileWrite in M",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "fix(plugin-scan): resolve plugin.json#hooks before scanning (#5116)",
+              "match": "fix(plugins): scan MCP servers declared in plugin.json (#5141)",
               "confidence": 0.98,
               "details": "Matched commit signature: \\bClaude Code\\b"
             }
@@ -27176,7 +27270,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:04.293121+00:00"
+      "scan_timestamp": "2026-11-28T06:35:26.597429+00:00"
     },
     {
       "name": "ai-agents-for-beginners",
@@ -27184,8 +27278,8 @@
       "html_url": "https://github.com/microsoft/ai-agents-for-beginners",
       "description": "18 Lessons to Get Started Building AI Agents",
       "default_branch": "main",
-      "stars": 81068,
-      "forks": 26510,
+      "stars": 81123,
+      "forks": 26536,
       "primary_language": "Jupyter Notebook",
       "topics": [
         "agentic-ai",
@@ -27276,7 +27370,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:29.049267+00:00"
+      "scan_timestamp": "2026-11-28T06:35:56.120290+00:00"
     },
     {
       "name": "learn-claude-code",
@@ -27284,8 +27378,8 @@
       "html_url": "https://github.com/shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
       "default_branch": "main",
-      "stars": 80969,
-      "forks": 12910,
+      "stars": 81001,
+      "forks": 12915,
       "primary_language": "Python",
       "topics": [
         "agent",
@@ -27345,7 +27439,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:51.343289+00:00"
+      "scan_timestamp": "2026-11-28T06:35:10.120504+00:00"
     },
     {
       "name": "ppt-master",
@@ -27353,8 +27447,8 @@
       "html_url": "https://github.com/hugohe3/ppt-master",
       "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
       "default_branch": "main",
-      "stars": 80614,
-      "forks": 6274,
+      "stars": 80838,
+      "forks": 6291,
       "primary_language": "Python",
       "topics": [
         "ai-agent",
@@ -27369,7 +27463,7 @@
         "slides"
       ],
       "created_at": "2025-12-10T06:54:33Z",
-      "pushed_at": "2026-11-20T08:41:50Z",
+      "pushed_at": "2026-11-28T02:53:01Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -27402,7 +27496,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:52.534344+00:00"
+      "scan_timestamp": "2026-11-28T06:35:11.683580+00:00"
     },
     {
       "name": "daily_stock_analysis",
@@ -27410,8 +27504,8 @@
       "html_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "default_branch": "main",
-      "stars": 74903,
-      "forks": 58804,
+      "stars": 75063,
+      "forks": 58896,
       "primary_language": "Python",
       "topics": [
         "a-stock",
@@ -27423,7 +27517,7 @@
         "quantitative-trading"
       ],
       "created_at": "2026-01-10T06:43:20Z",
-      "pushed_at": "2026-11-27T03:17:10Z",
+      "pushed_at": "2026-11-28T05:02:56Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -27511,7 +27605,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:53.619927+00:00"
+      "scan_timestamp": "2026-11-28T06:35:13.203505+00:00"
     },
     {
       "name": "Front-End-Checklist",
@@ -27519,8 +27613,8 @@
       "html_url": "https://github.com/thedaviddias/Front-End-Checklist",
       "description": "🗂 The essential checklist for modern web development, for humans and AI agents",
       "default_branch": "main",
-      "stars": 74832,
-      "forks": 6774,
+      "stars": 74844,
+      "forks": 6775,
       "primary_language": "MDX",
       "topics": [
         "ai-agent",
@@ -28227,7 +28321,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:54.596374+00:00"
+      "scan_timestamp": "2026-11-28T06:35:14.606847+00:00"
     },
     {
       "name": "context7",
@@ -28235,8 +28329,8 @@
       "html_url": "https://github.com/upstash/context7",
       "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "default_branch": "master",
-      "stars": 65530,
-      "forks": 3272,
+      "stars": 65560,
+      "forks": 3278,
       "primary_language": "TypeScript",
       "topics": [
         "llm",
@@ -28245,7 +28339,7 @@
         "vibe-coding"
       ],
       "created_at": "2025-03-26T23:40:39Z",
-      "pushed_at": "2026-11-26T23:30:50Z",
+      "pushed_at": "2026-11-28T00:49:46Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -28261,15 +28355,9 @@
             },
             {
               "type": "commit",
-              "match": "CTX7-4135: Serve teamspace skills from the dashboard over the MCP skills extensi",
+              "match": "CTX7-4161: Admin MCP: show benchmark criteria only (#3952)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "CTX7-4130: Stop logging a refused subscriptions/listen as an admin MCP error (#3",
-              "confidence": 0.98,
-              "details": "Matched commit signature: \\bClaude Code\\b"
             }
           ]
         }
@@ -28414,6 +28502,12 @@
           {
             "type": "config",
             "match": "packages/mcp/src/lib/auth/auth-prompt.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
+            "match": "packages/mcp/src/lib/code-task.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
           },
@@ -28641,6 +28735,12 @@
           },
           {
             "type": "config",
+            "match": "packages/mcp/test/code-task.test.ts",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
+            "type": "config",
             "match": "packages/mcp/test/code-tools.test.ts",
             "confidence": 0.95,
             "details": "MCP configuration detected in project files."
@@ -28827,7 +28927,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:05.247858+00:00"
+      "scan_timestamp": "2026-11-28T06:35:27.834126+00:00"
     },
     {
       "name": "TrendRadar",
@@ -28835,8 +28935,8 @@
       "html_url": "https://github.com/sansan0/TrendRadar",
       "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, web search, MCP & smart alerts.🎯 告别信息过载，你的 AI     舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅 + 定时联网搜索，支持关键词与 AI 智能筛选。AI 翻译 + AI 分析简报直推手机，支持接入 MCP     架构，赋能 AI 自然语言对话分析、实时检索、情感洞察与趋势预测。支持 Docker，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/Bark/Slack     等渠道智能推送。",
       "default_branch": "master",
-      "stars": 63909,
-      "forks": 24950,
+      "stars": 63925,
+      "forks": 24947,
       "primary_language": "TypeScript",
       "topics": [
         "ai",
@@ -28896,7 +28996,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:06.003796+00:00"
+      "scan_timestamp": "2026-11-28T06:35:28.834519+00:00"
     },
     {
       "name": "autogen",
@@ -28904,8 +29004,8 @@
       "html_url": "https://github.com/microsoft/autogen",
       "description": "A programming framework for agentic AI",
       "default_branch": "main",
-      "stars": 61969,
-      "forks": 9424,
+      "stars": 61967,
+      "forks": 9427,
       "primary_language": "Python",
       "topics": [
         "agentic",
@@ -29179,7 +29279,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:30.503144+00:00"
+      "scan_timestamp": "2026-11-28T06:35:57.679782+00:00"
     },
     {
       "name": "ai-agent-book",
@@ -29187,8 +29287,8 @@
       "html_url": "https://github.com/bojieli/ai-agent-book",
       "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
       "default_branch": "main",
-      "stars": 60050,
-      "forks": 7059,
+      "stars": 60135,
+      "forks": 7070,
       "primary_language": "Python",
       "topics": [
         "agent",
@@ -29206,7 +29306,7 @@
         "reinforcement-learning"
       ],
       "created_at": "2025-09-09T02:41:44Z",
-      "pushed_at": "2026-11-25T07:37:28Z",
+      "pushed_at": "2026-11-28T06:32:47Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -29222,43 +29322,61 @@
             },
             {
               "type": "commit",
-              "match": "feat(ch3): model how retrieved knowledge is used (#1246)",
+              "match": "feat(providers): add LLMTR provider (#1261)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "docs(ch6): discuss who calls tools in a voice agent (实验 6-7) and renumber 6-7..6",
+              "match": "feat(i18n): add tooling to retranslate figures and verify a translated edition (",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "feat(ch6/voice-tool-routing): measure who should call tools in a voice agent (#1",
+              "match": "docs: credit the Russian community edition maintainer across the READMEs",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "feat(providers): add TeamoRouter provider (#1247)",
+              "match": "Update the Russian translation to the current Chinese edition (#1254)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "docs(ch6): translate dsh-superagent's Ticket as 工单, matching chapter 10 (#1245)",
+              "match": "feat(ch1/web-search-agent): add an optional SpecStream search backend (#1255)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "docs(ch6): note dsh-superagent's main/executor session split in 事件处理机制 (#1242)",
+              "match": "feat(providers): add Straitly provider (#1259)",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "test(web): expect chapter 6's two new ingress tables in the zh-CN edition (#1243",
+              "match": "Rename UberLLM to MartLLM (#1256)",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(ch3): report retrieval failures during evaluation (#1253)",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(ch4/execution-tools): keep code_interpreter files inside the temp dir (#1257",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(ch5/agent-creator): fail the gate instead of raising when a validator step t",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
@@ -29375,7 +29493,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:56.651155+00:00"
+      "scan_timestamp": "2026-11-28T06:35:17.082735+00:00"
     },
     {
       "name": "chrome-devtools-mcp",
@@ -29383,8 +29501,8 @@
       "html_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "default_branch": "main",
-      "stars": 59535,
-      "forks": 4900,
+      "stars": 59652,
+      "forks": 4852,
       "primary_language": "TypeScript",
       "topics": [
         "browser",
@@ -29397,7 +29515,7 @@
         "puppeteer"
       ],
       "created_at": "2025-09-11T10:39:55Z",
-      "pushed_at": "2026-11-27T05:12:45Z",
+      "pushed_at": "2026-11-27T14:34:29Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -29424,7 +29542,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:06.661999+00:00"
+      "scan_timestamp": "2026-11-28T06:35:29.757765+00:00"
     },
     {
       "name": "codebase-memory-mcp",
@@ -29432,8 +29550,8 @@
       "html_url": "https://github.com/DeusData/codebase-memory-mcp",
       "description": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
       "default_branch": "main",
-      "stars": 49229,
-      "forks": 4098,
+      "stars": 49265,
+      "forks": 4100,
       "primary_language": "C",
       "topics": [
         "aider",
@@ -29458,7 +29576,7 @@
         "windsurf"
       ],
       "created_at": "2026-02-24T22:01:00Z",
-      "pushed_at": "2026-11-27T06:25:27Z",
+      "pushed_at": "2026-11-28T05:43:55Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -29906,7 +30024,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:28.662608+00:00"
+      "scan_timestamp": "2026-11-28T06:34:41.796272+00:00"
     },
     {
       "name": "langgraph",
@@ -29914,7 +30032,7 @@
       "html_url": "https://github.com/langchain-ai/langgraph",
       "description": "Build resilient agents.",
       "default_branch": "main",
-      "stars": 45495,
+      "stars": 45524,
       "forks": 7875,
       "primary_language": "Python",
       "topics": [
@@ -30017,7 +30135,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:11.278121+00:00"
+      "scan_timestamp": "2026-11-28T06:35:35.003276+00:00"
     },
     {
       "name": "agents",
@@ -30025,8 +30143,8 @@
       "html_url": "https://github.com/wshobson/agents",
       "description": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and Pi, written once in Markdown and adapted to each tool by generators with validation and evals.",
       "default_branch": "main",
-      "stars": 42952,
-      "forks": 4550,
+      "stars": 42995,
+      "forks": 4557,
       "primary_language": "Python",
       "topics": [
         "agent-skills",
@@ -30145,7 +30263,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:23.056481+00:00"
+      "scan_timestamp": "2026-11-28T06:34:34.726958+00:00"
     },
     {
       "name": "chatbox",
@@ -30153,7 +30271,7 @@
       "html_url": "https://github.com/chatboxai/chatbox",
       "description": "Powerful AI Client",
       "default_branch": "main",
-      "stars": 42551,
+      "stars": 42557,
       "forks": 4371,
       "primary_language": "TypeScript",
       "topics": [
@@ -30543,7 +30661,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:46.076691+00:00"
+      "scan_timestamp": "2026-11-28T06:35:02.846356+00:00"
     },
     {
       "name": "CopilotKit",
@@ -30551,8 +30669,8 @@
       "html_url": "https://github.com/CopilotKit/CopilotKit",
       "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol",
       "default_branch": "main",
-      "stars": 39008,
-      "forks": 4858,
+      "stars": 39019,
+      "forks": 4861,
       "primary_language": "TypeScript",
       "topics": [
         "agent",
@@ -30577,7 +30695,7 @@
         "typescript"
       ],
       "created_at": "2023-06-19T04:08:31Z",
-      "pushed_at": "2026-11-27T04:01:45Z",
+      "pushed_at": "2026-11-28T06:06:05Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -30794,6 +30912,54 @@
               "match": "showcase/shell-docs/CLAUDE.md",
               "confidence": 0.98,
               "details": "Matched configuration marker: CLAUDE.md"
+            },
+            {
+              "type": "commit",
+              "match": "feat(shell-docs): early-access channel pages, with the channels as ordinary fron",
+              "confidence": 0.98,
+              "details": "Matched commit signature: \\bClaude Code\\b"
+            },
+            {
+              "type": "commit",
+              "match": "fix(shell-docs): read a website booking answer's body only for a 200 or a 400",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "refactor(shell-docs): don't shadow the booker's clock in the hold timer effect",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(shell-docs): build a channel demo day's key from its date parts",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(shell-docs): read the channel demo times again when a taken time's hold ends",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(shell-docs): date a channel demo times read from when it was sent",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(shell-docs): map a website booking answer from its status before reading its",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
+            },
+            {
+              "type": "commit",
+              "match": "fix(shell-docs): list only frontends with docs in pickers that set the docs stac",
+              "confidence": 0.98,
+              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
           ]
         },
@@ -38203,6 +38369,12 @@
             },
             {
               "type": "config",
+              "match": "showcase/shell-docs/src/components/ui/dialog.tsx",
+              "confidence": 0.9,
+              "details": "Matched path pattern regex: components/ui/"
+            },
+            {
+              "type": "config",
               "match": "showcase/shell-docs/src/components/ui/dropdown-menu.tsx",
               "confidence": 0.9,
               "details": "Matched path pattern regex: components/ui/"
@@ -38404,7 +38576,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:48.235566+00:00"
+      "scan_timestamp": "2026-11-28T06:35:05.726188+00:00"
     },
     {
       "name": "context-mode",
@@ -38412,8 +38584,8 @@
       "html_url": "https://github.com/mksglu/context-mode",
       "description": "Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OMP, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.",
       "default_branch": "main",
-      "stars": 34528,
-      "forks": 2378,
+      "stars": 34552,
+      "forks": 2384,
       "primary_language": "JavaScript",
       "topics": [
         "antigravity",
@@ -38438,7 +38610,7 @@
         "zed-extension"
       ],
       "created_at": "2026-02-23T05:56:28Z",
-      "pushed_at": "2026-11-27T03:27:38Z",
+      "pushed_at": "2026-11-28T03:27:02Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -38469,12 +38641,6 @@
               "match": ".claude/skills/release/SKILL.md",
               "confidence": 0.98,
               "details": "Matched path pattern regex: ^\\.claude/"
-            },
-            {
-              "type": "commit",
-              "match": "fix: sandbox child env sets PYTHONUTF8=1 so python prints exact UTF-8 on Windows",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
           ]
         }
@@ -38515,7 +38681,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:49.015393+00:00"
+      "scan_timestamp": "2026-11-28T06:35:06.750970+00:00"
     },
     {
       "name": "9router",
@@ -38523,8 +38689,8 @@
       "html_url": "https://github.com/decolua/9router",
       "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
       "default_branch": "master",
-      "stars": 32892,
-      "forks": 6446,
+      "stars": 32932,
+      "forks": 6455,
       "primary_language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -38624,7 +38790,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:37.303766+00:00"
+      "scan_timestamp": "2026-11-28T06:34:52.822201+00:00"
     },
     {
       "name": "deepagents",
@@ -38632,8 +38798,8 @@
       "html_url": "https://github.com/langchain-ai/deepagents",
       "description": "The batteries-included agent harness.",
       "default_branch": "main",
-      "stars": 31635,
-      "forks": 4478,
+      "stars": 31647,
+      "forks": 4482,
       "primary_language": "Python",
       "topics": [
         "ai",
@@ -38646,7 +38812,7 @@
         "typescript"
       ],
       "created_at": "2025-07-27T23:07:53Z",
-      "pushed_at": "2026-11-26T20:17:51Z",
+      "pushed_at": "2026-11-28T02:45:45Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -38679,7 +38845,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:12.679570+00:00"
+      "scan_timestamp": "2026-11-28T06:35:36.570741+00:00"
     },
     {
       "name": "GenAI_Agents",
@@ -38687,7 +38853,7 @@
       "html_url": "https://github.com/NirDiamant/GenAI_Agents",
       "description": "50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.",
       "default_branch": "main",
-      "stars": 25143,
+      "stars": 25151,
       "forks": 4207,
       "primary_language": "Jupyter Notebook",
       "topics": [
@@ -38858,7 +39024,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:13.459733+00:00"
+      "scan_timestamp": "2026-11-28T06:35:37.468677+00:00"
     },
     {
       "name": "agency-agents-zh",
@@ -38866,8 +39032,8 @@
       "html_url": "https://github.com/jnMetaCode/agency-agents-zh",
       "description": "🎭 277 个即插即用的 AI 专家角色 — 支持 Claude Code/Cursor/Copilot 等 20 种工具，覆盖工程/设计/营销/金融等 20 个部门。含 64 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉/Qt 上位机/机械设计）。搭配编排器 agency-orchestrator，一句话即可让多位专家按 DAG 自动协作。",
       "default_branch": "main",
-      "stars": 22348,
-      "forks": 3573,
+      "stars": 22364,
+      "forks": 3576,
       "primary_language": "Shell",
       "topics": [
         "agency-orchestrator",
@@ -38916,7 +39082,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:23.807906+00:00"
+      "scan_timestamp": "2026-11-28T06:34:35.750786+00:00"
     },
     {
       "name": "agents-towards-production",
@@ -39057,7 +39223,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:14.444431+00:00"
+      "scan_timestamp": "2026-11-28T06:35:38.486257+00:00"
     },
     {
       "name": "eliza",
@@ -39065,8 +39231,8 @@
       "html_url": "https://github.com/elizaOS/eliza",
       "description": "Open source agentic operating system",
       "default_branch": "develop",
-      "stars": 19927,
-      "forks": 5909,
+      "stars": 19928,
+      "forks": 5910,
       "primary_language": "Java",
       "topics": [
         "agent",
@@ -39086,7 +39252,7 @@
         "telegram"
       ],
       "created_at": "2024-07-09T07:55:40Z",
-      "pushed_at": "2026-11-27T04:23:07Z",
+      "pushed_at": "2026-11-28T06:22:55Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -39096,37 +39262,7 @@
           "evidence": [
             {
               "type": "commit",
-              "match": "Merge origin/develop into claude/calendar-name",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "Name the resident calendar Eliza Calendar, as v119 did",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "Check a quote's sentence at both ends: closers, ! and ?, line ends, 8p.m. and a ",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "Apply the abbreviation rule where a quote stops, and let a digit continue a sent",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "End a sentence after p.m., a.m., U.S., St., Jr. or Sr. before a capitalised word",
-              "confidence": 0.98,
-              "details": "Matched commit signature: Co-authored-by:\\s*Claude"
-            },
-            {
-              "type": "commit",
-              "match": "End a sentence at every stop but a closed set of abbreviations, echo against eve",
+              "match": "Talk: a rejected cloud speech stop is asked again, not replayed",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
@@ -39151,6 +39287,12 @@
             "details": "MCP configuration detected in project files."
           },
           {
+            "type": "config",
+            "match": "spec/mcp/index.proof.dfy",
+            "confidence": 0.95,
+            "details": "MCP configuration detected in project files."
+          },
+          {
             "type": "dependency",
             "match": "NPM: @elizaos/core",
             "confidence": 0.95,
@@ -39170,7 +39312,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:33.555880+00:00"
+      "scan_timestamp": "2026-11-28T06:36:01.146502+00:00"
     },
     {
       "name": "ai-pdf-chatbot-langchain",
@@ -39178,8 +39320,8 @@
       "html_url": "https://github.com/mayooear/ai-pdf-chatbot-langchain",
       "description": "AI PDF chatbot agent built with LangChain & LangGraph ",
       "default_branch": "main",
-      "stars": 16575,
-      "forks": 3224,
+      "stars": 16574,
+      "forks": 3223,
       "primary_language": "TypeScript",
       "topics": [
         "agents",
@@ -39530,7 +39672,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:15.375681+00:00"
+      "scan_timestamp": "2026-11-28T06:35:39.579705+00:00"
     },
     {
       "name": "AgentGuide",
@@ -39538,8 +39680,8 @@
       "html_url": "https://github.com/adongwanai/AgentGuide",
       "description": "AI Agent 开发指南 | Agent Harness | 上下文工程 | 高级 RAG | MCP | Agentic RL 强化学习 | LangGraph 实战 | 1.2 万+ 大模型面试题 | 算法岗 / 开发岗求职 | 转行大模型",
       "default_branch": "main",
-      "stars": 12304,
-      "forks": 1161,
+      "stars": 12336,
+      "forks": 1163,
       "primary_language": "MDX",
       "topics": [
         "agentic-rl",
@@ -39558,7 +39700,7 @@
         "tutorial"
       ],
       "created_at": "2025-11-03T10:46:38Z",
-      "pushed_at": "2026-11-05T09:57:16Z",
+      "pushed_at": "2026-11-27T10:07:59Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -39606,7 +39748,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:18.485637+00:00"
+      "scan_timestamp": "2026-11-28T06:35:43.007401+00:00"
     },
     {
       "name": "magentic-ui",
@@ -39614,7 +39756,7 @@
       "html_url": "https://github.com/microsoft/magentic-ui",
       "description": "MagenticLite is an experimental agent that works across the browser and local file system",
       "default_branch": "main",
-      "stars": 10126,
+      "stars": 10128,
       "forks": 1019,
       "primary_language": "Python",
       "topics": [
@@ -39739,7 +39881,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:31.661036+00:00"
+      "scan_timestamp": "2026-11-28T06:35:58.975576+00:00"
     },
     {
       "name": "AiSOC",
@@ -39747,8 +39889,8 @@
       "html_url": "https://github.com/beenuar/AiSOC",
       "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
       "default_branch": "main",
-      "stars": 8113,
-      "forks": 880,
+      "stars": 8363,
+      "forks": 900,
       "primary_language": "Python",
       "topics": [
         "agentic-ai",
@@ -39773,7 +39915,7 @@
         "threat-intelligence"
       ],
       "created_at": "2026-05-02T03:30:19Z",
-      "pushed_at": "2026-11-26T08:28:21Z",
+      "pushed_at": "2026-11-28T06:32:46Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -40267,7 +40409,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:17.416278+00:00"
+      "scan_timestamp": "2026-11-28T06:35:41.798674+00:00"
     },
     {
       "name": "crewAI-examples",
@@ -40326,7 +40468,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:19.891271+00:00"
+      "scan_timestamp": "2026-11-28T06:35:44.618427+00:00"
     },
     {
       "name": "agentops",
@@ -40334,8 +40476,8 @@
       "html_url": "https://github.com/AgentOps-AI/agentops",
       "description": "Python SDK for AI agent monitoring, LLM cost tracking, benchmarking, and more. Integrates with most LLMs and agent frameworks including CrewAI, Agno, OpenAI Agents SDK, Langchain, Autogen, AG2, and CamelAI",
       "default_branch": "main",
-      "stars": 5976,
-      "forks": 666,
+      "stars": 5974,
+      "forks": 665,
       "primary_language": "Python",
       "topics": [
         "agent",
@@ -41056,7 +41198,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:21.411301+00:00"
+      "scan_timestamp": "2026-11-28T06:35:46.426840+00:00"
     },
     {
       "name": "costrict",
@@ -42234,7 +42376,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:39.504420+00:00"
+      "scan_timestamp": "2026-11-28T06:34:54.145459+00:00"
     },
     {
       "name": "folkbench",
@@ -42242,7 +42384,7 @@
       "html_url": "https://github.com/Folkbench/folkbench",
       "description": "AI API 中转站推荐与评测：中转站排行榜、中转站检测、Claude / GPT / Gemini 中转站对比 · AI API relay rankings · Folkbench Switch for Claude Code, Codex & Gemini CLI",
       "default_branch": "main",
-      "stars": 3845,
+      "stars": 3903,
       "forks": 22,
       "primary_language": "TypeScript",
       "topics": [
@@ -42268,7 +42410,7 @@
         "tauri"
       ],
       "created_at": "2026-10-02T09:50:45Z",
-      "pushed_at": "2026-11-26T21:58:31Z",
+      "pushed_at": "2026-11-27T21:40:47Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -42400,7 +42542,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:29.506782+00:00"
+      "scan_timestamp": "2026-11-28T06:34:42.981721+00:00"
     },
     {
       "name": "atmosphere",
@@ -42434,7 +42576,7 @@
         "websocket"
       ],
       "created_at": "2010-06-30T14:26:23Z",
-      "pushed_at": "2026-11-24T02:27:14Z",
+      "pushed_at": "2026-11-27T07:07:54Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -43610,7 +43752,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:22.925579+00:00"
+      "scan_timestamp": "2026-11-28T06:35:48.513352+00:00"
     },
     {
       "name": "agent-rules-books",
@@ -43618,8 +43760,8 @@
       "html_url": "https://github.com/ciembor/agent-rules-books",
       "description": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Clean Architecture and DDIA programming books.",
       "default_branch": "main",
-      "stars": 3368,
-      "forks": 597,
+      "stars": 3380,
+      "forks": 598,
       "primary_language": null,
       "topics": [
         "agent-rules",
@@ -43668,7 +43810,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:24.334789+00:00"
+      "scan_timestamp": "2026-11-28T06:34:36.341065+00:00"
     },
     {
       "name": "WindsurfAPI",
@@ -43676,7 +43818,7 @@
       "html_url": "https://github.com/dwgx/WindsurfAPI",
       "description": "Turn Windsurf / Devin Desktop's 100+ AI models (Claude, GPT, Gemini, DeepSeek, Kimi, GLM, SWE) into OpenAI-, Anthropic- & Gemini-compatible APIs. Zero-dependency self-hosted reverse proxy for Claude Code, Cline & Cursor. 把 Windsurf/Devin 云端 100+ 模型变成三套兼容 API。",
       "default_branch": "master",
-      "stars": 3164,
+      "stars": 3163,
       "forks": 627,
       "primary_language": "JavaScript",
       "topics": [
@@ -43702,7 +43844,7 @@
         "windsurf"
       ],
       "created_at": "2026-04-09T09:42:05Z",
-      "pushed_at": "2026-11-27T02:14:07Z",
+      "pushed_at": "2026-11-28T02:12:49Z",
       "is_ai_powered": false,
       "detected_tools": [],
       "agent_detection": {
@@ -43712,7 +43854,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:40.226766+00:00"
+      "scan_timestamp": "2026-11-28T06:34:55.069695+00:00"
     },
     {
       "name": "ruler",
@@ -43720,8 +43862,8 @@
       "html_url": "https://github.com/intellectronica/ruler",
       "description": "Ruler — apply the same rules to all coding agents",
       "default_branch": "main",
-      "stars": 3001,
-      "forks": 175,
+      "stars": 3003,
+      "forks": 174,
       "primary_language": "TypeScript",
       "topics": [
         "agents",
@@ -43838,7 +43980,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:30.336725+00:00"
+      "scan_timestamp": "2026-11-28T06:34:44.001901+00:00"
     },
     {
       "name": "jcodemunch-mcp",
@@ -43846,7 +43988,7 @@
       "html_url": "https://github.com/jgravelle/jcodemunch-mcp",
       "description": "Symbol-level code retrieval for AI agents: fetch the function you need, not the whole file. Runs locally. 96.2% fewer tokens per lookup on average than grep-and-read on our 15-lookup benchmark. Works with Claude Code, Cursor, Codex and any MCP client. Free for non-commercial use; commercial use needs a one-time license.",
       "default_branch": "main",
-      "stars": 2871,
+      "stars": 2873,
       "forks": 378,
       "primary_language": "Python",
       "topics": [
@@ -43872,7 +44014,7 @@
         "windsurf"
       ],
       "created_at": "2026-02-09T01:58:27Z",
-      "pushed_at": "2026-11-27T06:43:06Z",
+      "pushed_at": "2026-11-28T05:31:53Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -44146,37 +44288,37 @@
             },
             {
               "type": "commit",
-              "match": "docs: CLAUDE.md Tests line for 1.108.494",
+              "match": "release: v1.108.499 - init leaves a config it could not read untouched",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "release: v1.108.494 - one locked file no longer fails the whole re-index",
+              "match": "Merge main (L-355) into feat/cap-blast-radius-callers",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "docs: L-350 is FIXED on this branch",
+              "match": "Merge main (1.108.498) into feat/cap-blast-radius-callers",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "fix: one locked file no longer fails the whole re-index (L-350)",
+              "match": "Merge main (1.108.498) into fix/init-refuses-unparseable-config",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "docs: correct L-350, a failed read fails the walk rather than certifying it",
+              "match": "Merge main (caps 4 and 6) into fix/init-refuses-unparseable-config",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             },
             {
               "type": "commit",
-              "match": "docs: LEDGER row L-350, a failed open can leave a stale index complete",
+              "match": "docs: README names the get_blast_radius and get_endpoint_impact callers cap",
               "confidence": 0.98,
               "details": "Matched commit signature: Co-authored-by:\\s*Claude"
             }
@@ -44250,7 +44392,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:41.295756+00:00"
+      "scan_timestamp": "2026-11-28T06:34:56.428945+00:00"
     },
     {
       "name": "Agent2API",
@@ -44258,8 +44400,8 @@
       "html_url": "https://github.com/aimod-cc/Agent2API",
       "description": "Local AI routing gateway with Agent client takeover — reuse existing client logins, call 50+ AI clients through one base URL, with unified OpenAI / Anthropic / Images APIs, multi-account routing, check-in, balance and request reports · 本地 AI 路由网关 + Agent 客户端接管：复用各家客户端登录态，一个 base_url 调用 50+ 家模型额度，统一 OpenAI / Anthropic / 生图接口，多账号选路、签到、余额与请求报表一体管理",
       "default_branch": "main",
-      "stars": 2794,
-      "forks": 764,
+      "stars": 2822,
+      "forks": 772,
       "primary_language": "Rust",
       "topics": [
         "accio",
@@ -44273,9 +44415,23 @@
         "trae"
       ],
       "created_at": "2026-09-11T07:42:14Z",
-      "pushed_at": "2026-11-26T23:46:06Z",
-      "is_ai_powered": false,
-      "detected_tools": [],
+      "pushed_at": "2026-11-27T18:01:43Z",
+      "is_ai_powered": true,
+      "detected_tools": [
+        {
+          "tool_name": "Claude Code",
+          "category": "coding_assistant",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "type": "commit",
+              "match": "fix(title-routes): 归一化客户端标识，标题路由不再因大小写失配而永不命中 (#706)",
+              "confidence": 0.98,
+              "details": "Matched commit signature: \\bClaude Code\\b"
+            }
+          ]
+        }
+      ],
       "agent_detection": {
         "is_agent_project": false,
         "confidence": 0.0,
@@ -44283,7 +44439,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:42.103801+00:00"
+      "scan_timestamp": "2026-11-28T06:34:57.574035+00:00"
     },
     {
       "name": "AIWriteX",
@@ -44291,8 +44447,8 @@
       "html_url": "https://github.com/iniwap/AIWriteX",
       "description": "AIWriteX - 微信公众号全自动AI工具：全网热搜舆情聚合+趋势分析+爆款选题+文章采集+一键生成排版发布 | AI自动配图 | 去AI味、过朱雀检测 | 支持小红书/百家号/头条等多平台 | 洗稿润色支持多账号 | 专家赛道 | 小绿书贴图 | 短视频文案 | 手机控制 | 小说连载 | 短剧剧本 | 爆文10w+神器",
       "default_branch": "main",
-      "stars": 2337,
-      "forks": 438,
+      "stars": 2339,
+      "forks": 440,
       "primary_language": "Python",
       "topics": [
         "agents",
@@ -44317,7 +44473,7 @@
         "xiaohongshu"
       ],
       "created_at": "2025-04-02T07:28:12Z",
-      "pushed_at": "2026-11-27T03:08:06Z",
+      "pushed_at": "2026-11-27T10:57:24Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -44351,7 +44507,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:23.850974+00:00"
+      "scan_timestamp": "2026-11-28T06:35:49.583660+00:00"
     },
     {
       "name": "meridian",
@@ -44359,8 +44515,8 @@
       "html_url": "https://github.com/rynfar/meridian",
       "description": "Use Claude and Antigravity with Pi, OpenCode and other coding clients. Local API bridge, usage dashboard and Mac app. Antigravity preview available in 1.74.0.",
       "default_branch": "main",
-      "stars": 2220,
-      "forks": 255,
+      "stars": 2222,
+      "forks": 256,
       "primary_language": "TypeScript",
       "topics": [
         "ai-agents",
@@ -44436,7 +44592,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:31.416626+00:00"
+      "scan_timestamp": "2026-11-28T06:34:45.304342+00:00"
     },
     {
       "name": "mcp-memory-service",
@@ -44444,8 +44600,8 @@
       "html_url": "https://github.com/doobidoo/mcp-memory-service",
       "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
       "default_branch": "main",
-      "stars": 2157,
-      "forks": 435,
+      "stars": 2162,
+      "forks": 437,
       "primary_language": "Python",
       "topics": [
         "agent-memory",
@@ -44470,7 +44626,7 @@
         "vector-storage"
       ],
       "created_at": "2024-12-26T10:15:44Z",
-      "pushed_at": "2026-11-27T06:58:50Z",
+      "pushed_at": "2026-11-27T13:09:18Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -44841,7 +44997,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:25.236312+00:00"
+      "scan_timestamp": "2026-11-28T06:35:51.188173+00:00"
     },
     {
       "name": "DevDocs",
@@ -45072,7 +45228,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:43.093981+00:00"
+      "scan_timestamp": "2026-11-28T06:34:58.678945+00:00"
     },
     {
       "name": "full-stack-ai-agent-template",
@@ -45565,7 +45721,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:26.416228+00:00"
+      "scan_timestamp": "2026-11-28T06:35:52.751802+00:00"
     },
     {
       "name": "cursor-rules",
@@ -45591,7 +45747,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:24.817282+00:00"
+      "scan_timestamp": "2026-11-28T06:34:37.048313+00:00"
     },
     {
       "name": "awesome-multi-agent-papers",
@@ -45599,7 +45755,7 @@
       "html_url": "https://github.com/kyegomez/awesome-multi-agent-papers",
       "description": "A compilation of the best multi-agent papers",
       "default_branch": "main",
-      "stars": 1725,
+      "stars": 1726,
       "forks": 175,
       "primary_language": "TeX",
       "topics": [
@@ -45620,7 +45776,7 @@
         "transformers-models"
       ],
       "created_at": "2024-02-21T19:45:57Z",
-      "pushed_at": "2026-11-26T17:04:21Z",
+      "pushed_at": "2026-11-27T17:00:41Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -45675,7 +45831,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:27.019708+00:00"
+      "scan_timestamp": "2026-11-28T06:35:53.497041+00:00"
     },
     {
       "name": "AutoGroq",
@@ -45738,7 +45894,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:32.410968+00:00"
+      "scan_timestamp": "2026-11-28T06:35:59.826325+00:00"
     },
     {
       "name": "agent-deck",
@@ -45746,7 +45902,7 @@
       "html_url": "https://github.com/asheshgoplani/agent-deck",
       "description": "Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more.",
       "default_branch": "main",
-      "stars": 1312,
+      "stars": 1320,
       "forks": 239,
       "primary_language": "Go",
       "topics": [
@@ -45770,7 +45926,7 @@
         "tui"
       ],
       "created_at": "2025-12-03T17:08:12Z",
-      "pushed_at": "2026-11-23T21:55:47Z",
+      "pushed_at": "2026-11-28T06:32:23Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -45869,7 +46025,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:32.479281+00:00"
+      "scan_timestamp": "2026-11-28T06:34:46.647191+00:00"
     },
     {
       "name": "Multi-Agent-CAD",
@@ -45877,7 +46033,7 @@
       "html_url": "https://github.com/Pan-Chera/Multi-Agent-CAD",
       "description": "MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute",
       "default_branch": "main",
-      "stars": 1089,
+      "stars": 1090,
       "forks": 106,
       "primary_language": "Python",
       "topics": [
@@ -45950,7 +46106,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:33.517799+00:00"
+      "scan_timestamp": "2026-11-28T06:34:48.086766+00:00"
     },
     {
       "name": "aidermacs",
@@ -45982,7 +46138,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:34.077836+00:00"
+      "scan_timestamp": "2026-11-28T06:34:48.736683+00:00"
     },
     {
       "name": "awesome-devtools",
@@ -46026,7 +46182,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:25.505052+00:00"
+      "scan_timestamp": "2026-11-28T06:34:37.685156+00:00"
     },
     {
       "name": "aider.el",
@@ -46062,7 +46218,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:34.577747+00:00"
+      "scan_timestamp": "2026-11-28T06:34:49.416525+00:00"
     },
     {
       "name": "agent-skills-standard",
@@ -46070,8 +46226,8 @@
       "html_url": "https://github.com/HoangNguyen0403/agent-skills-standard",
       "description": "A collection of Agent Skills Standard and Best Practice for Programming Languages, Frameworks that help our AI Agent follow best practies on frameworks and programming laguages",
       "default_branch": "develop",
-      "stars": 584,
-      "forks": 163,
+      "stars": 595,
+      "forks": 166,
       "primary_language": "TypeScript",
       "topics": [
         "agent-",
@@ -46095,7 +46251,7 @@
         "typescript"
       ],
       "created_at": "2026-01-15T15:33:38Z",
-      "pushed_at": "2026-11-27T04:00:07Z",
+      "pushed_at": "2026-11-28T05:27:44Z",
       "is_ai_powered": true,
       "detected_tools": [
         {
@@ -46298,6 +46454,12 @@
             {
               "type": "config",
               "match": ".claude/commands/dev-fix.md",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": ".claude/commands/evals-run.md",
               "confidence": 0.98,
               "details": "Matched path pattern regex: ^\\.claude/"
             },
@@ -49531,13 +49693,43 @@
             },
             {
               "type": "config",
+              "match": ".claude/skills/cybersecurity/cyber-scoped-validation/assets",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": ".claude/skills/cybersecurity/cyber-scoped-validation/assets/offline-access-control-matrix.json",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
               "match": ".claude/skills/cybersecurity/cyber-scoped-validation/references",
               "confidence": 0.98,
               "details": "Matched path pattern regex: ^\\.claude/"
             },
             {
               "type": "config",
+              "match": ".claude/skills/cybersecurity/cyber-scoped-validation/references/offline-access-control-worked-recipe.md",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
               "match": ".claude/skills/cybersecurity/cyber-scoped-validation/references/validation-record.md",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": ".claude/skills/cybersecurity/cyber-scoped-validation/scripts",
+              "confidence": 0.98,
+              "details": "Matched path pattern regex: ^\\.claude/"
+            },
+            {
+              "type": "config",
+              "match": ".claude/skills/cybersecurity/cyber-scoped-validation/scripts/offline-access-control-fixture.mjs",
               "confidence": 0.98,
               "details": "Matched path pattern regex: ^\\.claude/"
             },
@@ -51274,7 +51466,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T06:59:26.627431+00:00"
+      "scan_timestamp": "2026-11-28T06:34:39.349337+00:00"
     },
     {
       "name": "vn-law-check",
@@ -51387,7 +51579,7 @@
         "frameworks": [],
         "evidence": []
       },
-      "scan_timestamp": "2026-11-27T06:59:27.450795+00:00"
+      "scan_timestamp": "2026-11-28T06:34:40.480071+00:00"
     },
     {
       "name": "milady",
@@ -51541,7 +51733,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:34.581564+00:00"
+      "scan_timestamp": "2026-11-28T06:36:02.461720+00:00"
     },
     {
       "name": "Phyzical_org",
@@ -51585,17 +51777,17 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:35.150807+00:00"
+      "scan_timestamp": "2026-11-28T06:36:03.041176+00:00"
     },
     {
       "name": "pancakeswap-fourmeme-sniper-bot",
-      "full_name": "nguyen-huu275/pancakeswap-fourmeme-sniper-bot",
-      "html_url": "https://github.com/nguyen-huu275/pancakeswap-fourmeme-sniper-bot",
-      "description": "Community-driven Four.meme sniper bot for BSC with auto-buy and PancakeSwap V3",
+      "full_name": "ytrytyyf3-max/pancakeswap-fourmeme-sniper-bot",
+      "html_url": "https://github.com/ytrytyyf3-max/pancakeswap-fourmeme-sniper-bot",
+      "description": "Community-built Four.meme sniper bot for BNB Chain: auto-buy, liquidity, PancakeSwap V3, bloXroute b",
       "default_branch": "main",
-      "stars": 153,
+      "stars": 121,
       "forks": 0,
-      "primary_language": "TypeScript",
+      "primary_language": "HTML",
       "topics": [
         "arbitrum",
         "cross-chain",
@@ -51604,7 +51796,6 @@
         "elizaos-plugins",
         "fourmeme-bot",
         "fourmeme-bundler",
-        "fourmeme-bundler-bot",
         "gasless",
         "liquidity-management",
         "orkid-labs",
@@ -51614,8 +51805,8 @@
         "widget",
         "x402"
       ],
-      "created_at": "2026-11-15T20:24:13Z",
-      "pushed_at": "2026-11-27T04:41:07Z",
+      "created_at": "2026-11-26T22:52:51Z",
+      "pushed_at": "2026-11-28T05:52:01Z",
       "is_ai_powered": true,
       "detected_tools": [],
       "agent_detection": {
@@ -51636,7 +51827,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:35.814306+00:00"
+      "scan_timestamp": "2026-11-28T06:36:03.670292+00:00"
     },
     {
       "name": "kuberna-labs",
@@ -51743,7 +51934,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:37.124626+00:00"
+      "scan_timestamp": "2026-11-28T06:36:04.822910+00:00"
     },
     {
       "name": "claimchain",
@@ -51815,7 +52006,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:38.084056+00:00"
+      "scan_timestamp": "2026-11-28T06:36:05.659687+00:00"
     },
     {
       "name": "ai-agent-terraform",
@@ -51870,7 +52061,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:38.798175+00:00"
+      "scan_timestamp": "2026-11-28T06:36:06.389928+00:00"
     },
     {
       "name": "mx-agent-kit",
@@ -51927,7 +52118,7 @@
           }
         ]
       },
-      "scan_timestamp": "2026-11-27T07:00:39.432171+00:00"
+      "scan_timestamp": "2026-11-28T06:36:07.096866+00:00"
     }
   ]
 }
